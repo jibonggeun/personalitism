@@ -133,7 +133,50 @@
                       <h4>
                         "내 마음대로 되지 않는 것도 있다" 는 것을 받아들이고 타인의 조언을 듣는다.
                       </h4>
-                      <div id="kakaostory-share-button" data-url="https://dev.kakao.com"></div>
+                      <a id="kakao-link-btn" href="javascript:;">
+<img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
+</a>
+<script type='text/javascript'>
+  //<![CDATA[
+    // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+    Kakao.init('bcfd53f8c65657fa62fd3c1282cdbf15');
+    // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+    Kakao.Link.createDefaultButton({
+      container: '#kakao-link-btn',
+      objectType: 'feed',
+      content: {
+        title: '딸기 치즈 케익',
+        description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
+        imageUrl: 'http://mud-kage.kakao.co.kr/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+        link: {
+          mobileWebUrl: 'https://developers.kakao.com',
+          webUrl: 'https://developers.kakao.com'
+        }
+      },
+      social: {
+        likeCount: 286,
+        commentCount: 45,
+        sharedCount: 845
+      },
+      buttons: [
+        {
+          title: '웹으로 보기',
+          link: {
+            mobileWebUrl: 'https://developers.kakao.com',
+            webUrl: 'https://developers.kakao.com'
+          }
+        },
+        {
+          title: '앱으로 보기',
+          link: {
+            mobileWebUrl: 'https://developers.kakao.com',
+            webUrl: 'https://developers.kakao.com'
+          }
+        }
+      ]
+    });
+  //]]>
+</script>
                     </div>
                   </div>
                 </div>
@@ -169,59 +212,5 @@
 
         <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
-<a href="javascript:;" id="kakao-link-btn">
-<img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_small.png" width="10px" />
-</a>
-
-<script type="text/javascript">
-  //<![CDATA[
-    // // 사용할 앱의 JavaScript 키를 설정해 주세요.
-    Kakao.init('bcfd53f8c65657fa62fd3c1282cdbf15');
-    // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
-    Kakao.Link.createDefaultButton({
-      container: '#kakao-link-btn',
-      objectType: 'feed',
-      content: {
-        title: document.title,
-        description: '내용, 주로 해시태그',
-        imageUrl: document.images[0].src,
-        link: {
-          webUrl: document.location.href,
-          mobileWebUrl: document.location.href
-        }
-      },
-      social: {
-        likeCount: 286,
-        commentCount: 45,
-        sharedCount: 845
-      },
-      buttons: [
-        {
-          title: 'Open!',
-          link: {
-            mobileWebUrl: document.location.href,
-            webUrl: document.location.href
-          }
-        }
-      ]
-    });
-  //]]>
-</script>
-
     </body>
-    <script>
-  window.kakaoAsyncInit = function () {
-    Kakao.Story.createShareButton({
-      container: '#kakaostory-share-button'
-    });
-  };
-
-  (function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//developers.kakao.com/sdk/js/kakao.story.min.js";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'kakao-js-sdk'));
-</script>
 </html>
