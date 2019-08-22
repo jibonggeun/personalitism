@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+      <meta property="og:url"           content="https://www.personalitism.shop/resultD.html"/>
+      <meta property="og:type"          content="website" />
+      <meta property="og:title"         content="Yodfsdfsdfsdfe" />
+      <meta property="og:description"   content="Your dsdfsdfsdfsion" />
+      <meta property="og:image"         content="https://www.personalitism.shop/img/disc_content.png"/>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
+        <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
         <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>성격지상주의</title>
+        <title>ENERGY CAFE</title>
 
         <!-- Icon css link -->
         <link href="vendors/themify-icon/themify-icons.css" rel="stylesheet">
@@ -92,36 +100,41 @@
                   </div>
                   <div class="col-md-12 text-center">
                     <div class="col-md-12">
-                      <button type="button" name="button" style="width: 150px;background-color: #485995; margin-bottom: 5px; border:0; color: white;"><img src="img\result\facebook.png" alt="">공유 하기</button>
-                      <button type="button" name="button" style="width: 150px;background-color: #1AB2E8; margin-bottom: 5px; border:0; color: white;"><img src="img\result\twitter.png" alt="">공유 하기</button>
+                      <button type="button" name="button" onclick="sharefacebook()" style="width: 135px;background-color: #485995; margin-bottom: 5px; border:0; color: white;"><img src="img\result\facebook.png" alt="">공유 하기</button>
+                      <script type="text/javascript">
+                      function sharefacebook(){
+                        window.open('http://www.facebook.com/sharer/sharer.php?u=personalitism.shop/resultD');
+                      }
+                      </script>
+                      <button type="button" name="button" style="width: 135px;background-color: #1AB2E8; margin-bottom: 5px; border:0; color: white;"><img src="img\result\twitter.png" alt="">공유 하기</button>
                     </div>
                   </div>
                   <div class="col-md-12 text-center">
                     <div class="col-md-12">
-                      <button type="button" name="button" style="width: 150px;background-color: #E4D533; margin-bottom: 5px; border:0; color: white;"><img src="img\result\kakao.png" alt="">공유 하기</button>
-                      <button type="button" name="button" style="width: 150px;background-color: #EB5599; margin-bottom: 5px; border:0; color: white;"><img src="img\result\call.png" alt="">상담 예약</button>
-                    </div>
-                  </div>
-                  <div class="col-md-12 text-center">
-                    <div class="col-md-12">
-                      <button type="button" onclick="dis()"name="button" style="width: 303px; height: 32px; background-color: #E42533; margin-bottom: 5px; border:0; color: white;">유형별 특징 알아보기</button>
+                      <button type="button" id="kakao-link-btn" name="button" style="width: 135px;background-color: #E4D533; margin-bottom: 5px; border:0; color: white;"><img src="img\result\kakao.png" alt="">공유 하기</button>
+                      <button type="button" name="button" onclick="goenergy()" style="width: 135px;background-color: #EB5599; margin-bottom: 5px; border:0; color: white;"><img src="img\result\call.png" alt="">상담 예약
+                        <script type="text/javascript">
+                        function goenergy(){
+                          window.open('https://booking.naver.com/booking/6/bizes/189510?area=ple/');
+                        }
+                        </script>
+                      </button>
                     </div>
                   </div>
                   <div class="col-md-12 result_text">
                     <div class="col-md-12">
-                      <h4 style="margin-top: 10px;">ID형 성격 내용</h5>
+                      <h4 style="margin-top: 10px;">성격 내용</h5>
                       <p style="margin-top: 10px;">
                         동기요인: 목적 성취 <br><br>
-                        1. I형이 D형보다 강하게 표출될 때, 이 유형은 무엇보다도 동기를 부여하는 사람이다. 이들의 낙관적인 성향은
-                           사람들이 끝없는 열정을 통하여 행동하도록 격려한다. <br><br>
-                        2. ID유형은 사람들과 어울리고 흥미로운 것을 찾아 가며 상대를 설득하고 동기부여 하는 일에 흥미를 느낀다. <br><br>
-                        3. 부정적인 생각과 회의주의를 싫어한다.<br><br>
-                        4. 재미없는 것을 재미있게 만들고, 하고 싶지 않아도 하고 싶은 마음으로 바꾸는 재주가 있다. <br><br>
-                        5. 세부사항의 중요성을 인식하고 적절한 정보를 얻어갈 때 충동적 행동을 억제할 수 있을 것이다.<br><br>
+                        1. 직관적인 현실 판단, 결단력이 뛰어나고 높은 실천력을 가짐 <br><br>
+                        2. 개인주의적 경향과 독립심이 강하다 <br><br>
+                        3. 무뚝뚝하고 단도직입적이며, 간결하고 직선적인 말투를 구사한다<br><br>
+                        4. 직선적이고 강인한 행동을 하지만 그만큼 사람이나 상황을 빠르고 선명하게 다룰 수 있다 <br><br>
+                        5. 결과지향성과 리더쉽이 많지만 인간적 이유세 별 관심이 없으며, 다른 사람의 마음을
+                           이해하려는 노력이 부족하기 때문에 종종 무관심해 보이기도 한다<br><br>
                       </p>
                       <h4>
-                        재미있고 센스 있는 매력이 더욱 빛나보이려면, 상대에게 확신을 줄 수 있는 신뢰도를 높일 필요가 있다.
-                        때로는 융통성보다 내뱉은 말을 지켜내는 진정성이 상대에게 신뢰를 준다.
+                        "내 마음대로 되지 않는 것도 있다" 는 것을 받아들이고 타인의 조언을 듣는다.
                       </h4>
                     </div>
                   </div>
@@ -130,6 +143,47 @@
         </section>
         <!--================End Service Area =================-->
 
+        <script type='text/javascript'>
+          //<![CDATA[
+            // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+            Kakao.init('d0f37cd48affc2f957e92ab6a25a2674');
+            // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+            Kakao.Link.createDefaultButton({
+              container: '#kakao-link-btn',
+              objectType: 'feed',
+              content: {
+                title: '나의 연애 궁합은?',
+                description: '#성격테스트 #똘끼테스트 #나의연애궁합 #나의성격은',
+                imageUrl: 'http://mud-kage.kakao.co.kr/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+                link: {
+                  mobileWebUrl: 'https://personalitism.shop',
+                  webUrl: 'https://personalitism.shop'
+                }
+              },
+              social: {
+                likeCount: 286,
+                commentCount: 45,
+                sharedCount: 845
+              },
+              buttons: [
+                {
+                  title: '웹으로 보기',
+                  link: {
+                    mobileWebUrl: 'https://personalitism.shop',
+                    webUrl: 'https://personalitism.shop'
+                  }
+                },
+                {
+                  title: '앱으로 보기',
+                  link: {
+                    mobileWebUrl: 'https://personalitism.shop',
+                    webUrl: 'https://personalitism.shop'
+                  }
+                }
+              ]
+            });
+          //]]>
+        </script>
 
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -156,6 +210,8 @@
         <script src="js/jquery.form.js"></script>
         <script src="js/jquery.validate.min.js"></script>
         <script src="js/contact.js"></script>
+
+        <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
     </body>
 </html>
