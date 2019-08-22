@@ -75,18 +75,22 @@
 
         <section class="our_benefits_area display_table purple_benefits" id="reservation">
           <div class="container">
-            <div class="main_title purple_title">
-                <h2 style="margin-top: 70px;">회원가입</h2>
+            <div class="main_title purple_title" style="padding: 0;">
+                <h2 style="margin-top: 100px;">회원가입</h2>
             </div>
                 <div class="col-md-12">
-                    <div class="contact_form_left" style="padding-top: 15px;">
+                    <div class="contact_form_left" style="margin-top: 50px;">
                         <div class="row">
                             <form class="comment_form_inner" action="contact_process.php" method="post" id="contactForm">
+                              <div class="col-md-12 text-center choose-gender">
+                                <input type="radio" name="group" checked="">남자 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="group">여자
+                              </div>
                                 <div class="form-group col-md-12">
                                     <input type="text" class="form-control" id="name" name="name" placeholder="이름">
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="성별">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="이메일">
                                 </div>
                                 <div class="form-group col-md-12">
                                     <input type="text" class="form-control" id="subject" name="subject" placeholder="나이">
