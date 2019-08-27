@@ -90,7 +90,7 @@
       <img src="img/test/date.jpg" style="width:100%; margin-bottom:20px; margin-top:50px;"alt="">
       <a href="login.html"><img src="img/test/start.jpg" style="width:240px; height: 60px; margin-bottom:30px;" alt=""></a>
       <button type="button" name="button" onclick="sharefacebook()" style="width: 135px;background-color: #485995; margin-bottom: 5px; border:0; color: white;"><img src="img\result\facebook.png" alt="">공유 하기</button>
-      <button type="button" id="kakao-link-btn" name="button" style="width: 135px;background-color: #E4D533; margin-bottom: 5px; border:0; color: white;"><img src="img\result\kakao.png" alt="">공유 하기</button>
+      <button type="button" id="kakao-link-btn1" name="button" style="width: 135px;background-color: #E4D533; margin-bottom: 5px; border:0; color: white;"><img src="img\result\kakao.png" alt="">공유 하기</button>
     </div>
   </div>
 </section>
@@ -229,6 +229,48 @@
             // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
             Kakao.Link.createDefaultButton({
               container: '#kakao-link-btn',
+              objectType: 'feed',
+              content: {
+                title: '나의 연애 궁합은?',
+                description: '#성격테스트 #똘끼테스트 #나의연애궁합 #나의성격은',
+                imageUrl: 'http://mud-kage.kakao.co.kr/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+                link: {
+                  mobileWebUrl: 'https://personalitism.shop',
+                  webUrl: 'https://personalitism.shop'
+                }
+              },
+              social: {
+                likeCount: 286,
+                commentCount: 45,
+                sharedCount: 845
+              },
+              buttons: [
+                {
+                  title: '웹으로 보기',
+                  link: {
+                    mobileWebUrl: 'https://personalitism.shop',
+                    webUrl: 'https://personalitism.shop'
+                  }
+                },
+                {
+                  title: '앱으로 보기',
+                  link: {
+                    mobileWebUrl: 'https://personalitism.shop',
+                    webUrl: 'https://personalitism.shop'
+                  }
+                }
+              ]
+            });
+          //]]>
+        </script>
+
+        <script type='text/javascript'>
+          //<![CDATA[
+            // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+            Kakao.init('d0f37cd48affc2f957e92ab6a25a2674');
+            // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+            Kakao.Link.createDefaultButton({
+              container: '#kakao-link-btn1',
               objectType: 'feed',
               content: {
                 title: '나의 연애 궁합은?',
