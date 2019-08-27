@@ -73,58 +73,99 @@
         num_i = data[1];
         num_s = data[2];
         num_c = data[3];
-        if(num_d>=20 && num_i<=6 && num_s<=6 && num_c<=6){
+
+
+        if (num_d>=18) {
           location.href='resultD.html';
+          if (num_i>=7) {
+            location.href='resultDI_.html';
+          }
+          else if (num_s>=7) {
+            location.href='resultDS_.html';
+          }
+          else if (num_C>=7) {
+            location.href='resultDC_.html';
+          }
         }
-        if(7<=num_d<=11 && 7<=num_i<=11 && num_d>=num_i && num_s<=5 && num_c<=5){
-          location.href='resultDI_.html';
+        if (num_d>=11 & num_i>=11 && num_d>=num_i) {
+          location.href='resultDI.html';
         }
-        if(7<=num_d<=11 && 7<=num_s<=11 && num_d>=num_s && num_i<=5 && num_c<=5){
-          location.href='resultDS_.html';
+        if (num_d>=11 & num_s>=11 && num_d>=num_s) {
+          location.href='resultDS.html';
         }
-        if(7<=num_d<=11 && 7<=num_c<=11 && num_d>=num_c && num_i<=5 && num_s<=5){
-          location.href='resultDC_.html';
+        if (num_d>=11 & num_c>=11 && num_d>=num_c) {
+          location.href='resultDC.html';
         }
 
 
-        if(num_i>=20 && num_d<=6 && num_s<=6 && num_c<=6){
+        if (num_i>=18) {
           location.href='resultI.html';
+          if (num_d>=7) {
+            location.href='resultID_.html';
+          }
+          else if (num_s>=7) {
+            location.href='resultIS_.html';
+          }
+          else if (num_c>=7) {
+            location.href='resultIC_.html';
+          }
         }
-        if(7<=num_i<=11 && 7<=num_d<=11 && num_i>num_d && num_s<=5 && num_c<=5){
-          location.href='resultID_.html';
+        if (num_i>=11 & num_d>=11 && num_i>num_d) {
+          location.href='resultID.html';
         }
-        if(7<=num_i<=11 && 7<=num_s<=11 && num_i>=num_s && num_d<=5 && num_c<=5){
-          location.href='resultIS_.html';
+        if (num_i>=11 & num_s>=11 && num_i>=num_s) {
+          location.href='resultIS.html';
         }
-        if(7<=num_i<=11 && 7<=num_c<=11 && num_i>=num_c && num_d<=5 && num_s<=5){
-          location.href='resultIC_.html';
+        if (num_i>=11 & num_c>=11 && num_i>=num_c) {
+          location.href='resultIC.html';
         }
 
-        if(num_s>=20 && num_d<=6 && num_i<=6 && num_c<=6){
+        if (num_s>=18) {
           location.href='resultS.html';
+          if (num_d>=7) {
+            location.href='resultSD_.html';
+          }
+          else if (num_i>=7) {
+            location.href='resultSI_.html';
+          }
+          else if (num_c>=7) {
+            location.href='resultSC_.html';
+          }
         }
-        if(7<=num_s<=11 && 7<=num_d<=11 && num_s>num_d && num_i<=5 && num_c<=5){
-          location.href='resultSD_.html';
+        if (num_s>=11 & num_d>=11 && num_s>num_d) {
+          location.href='resultSD.html';
         }
-        if(7<=num_s<=11 && 7<=num_i<=11 && num_s>num_i && num_d<=5 && num_c<=5){
-          location.href='resultSI_.html';
+        if (num_s>=11 & num_i>=11 && num_s>num_i) {
+          location.href='resultSI.html';
         }
-        if(7<=num_s<=11 && 7<=num_c<=11 && num_s>=num_c && num_d<=5 && num_i<=5){
-          location.href='resultSC_.html';
+        if (num_s>=11 & num_c>=11 && num_s>=num_c) {
+          location.href='resultSC.html';
         }
 
-        if(num_c>=20 && num_d<=6 && num_i<=6 && num_s<=6){
+        if (num_c>=18) {
           location.href='resultC.html';
+          if (num_d>=7) {
+            location.href='resultCD_.html';
+          }
+          else if (num_i>=7) {
+            location.href='resultCI_.html';
+          }
+          else if (num_s>=7) {
+            location.href='resultCS_.html';
+          }
         }
-        if(7<=num_c<=11 && 7<=num_d<=11 && num_c>num_d && num_s<=5 && num_i<=5){
-          location.href='resultCD_.html';
+        if (num_c>=11 & num_d>=11 && num_c>num_d) {
+          location.href='resultCD.html';
         }
-        if(7<=num_c<=11 && 7<=num_i<=11 && num_c>num_i && num_d<=5 && num_s<=5){
-          location.href='resultCI_.html';
+        if (num_c>=11 & num_i>=11 && num_c>num_i) {
+          location.href='resultCI.html';
         }
-        if(7<=num_c<=11 && 7<=num_s<=11 && num_c>num_s && num_d<=5 && num_i<=5){
-          location.href='resultCS_.html';
+        if (num_c>=11 & num_s>=11 && num_c>num_s) {
+          location.href='resultCS.html';
         }
+
+
+
 
         </script>
         <!--================Service Area =================-->
