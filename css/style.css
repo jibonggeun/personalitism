@@ -338,7 +338,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   border-radius: 0px;
   background: transparent;
   margin-bottom: 0px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 0px solid rgba(255, 255, 255, 0);
 }
 
 .main_menu_area .navbar-default .navbar-header .navbar-brand {
@@ -375,7 +375,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .main_menu_area .navbar-default .navbar-collapse .nav.navbar-nav li.submenu .dropdown-menu {
-  background: #fff;
+  background: black;
   border-radius: 0px;
   border: none;
 }
@@ -473,6 +473,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .main_menu_area.stricky-fixed .navbar-default .navbar-header .navbar-brand {
+  background-color: white;
   display: inline-block;
   padding: 0px;
   line-height: 60px;
@@ -2586,7 +2587,6 @@ body, p, h1, h2, h3, h4, h5, h6 {
 /* Latest Blog area css
 ============================================================================================ */
 .latest_blog_area {
-  margin-top: 70px;
   padding: 0px 0px;
   background: #f1f1f1;
 }

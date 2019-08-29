@@ -64,7 +64,7 @@
         padding-left: 15px;
     }
     .navbar-default .navbar-toggle .icon-bar {
-        background-color: #fff;
+        background-color: black;
     }
     .main_menu_area .navbar-default .navbar-collapse .nav.navbar-nav li a {
         line-height: 40px;
@@ -73,7 +73,7 @@
         background-color: transparent;
     }
     .main_menu_area {
-        background: rgba(0, 0, 0, .5);
+        background: rgba(0, 0, 0, 0.5);
     }
     .main_menu_area .navbar-default .navbar-header .navbar-brand {
         line-height: 67px;
