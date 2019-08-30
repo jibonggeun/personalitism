@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-      <meta property="og:url"           content="https://www.personalitism.shop/ddol"/>
-      <meta property="og:type"          content="website" />
-      <meta property="og:title"         content="Yodfsdfsdfsdfe" />
-      <meta property="og:description"   content="Your dsdfsdfsdfsion" />
-      <meta property="og:image"         content="https://www.personalitism.shop/img/test/ddol.jpg"/>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
-      <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-        <link rel="icon" href="img/logo/energy_logo" type="image/x-icon" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>ENERGY CAFE</title>
+        <title>성격지상주의</title>
 
         <!-- Icon css link -->
         <link href="vendors/themify-icon/themify-icons.css" rel="stylesheet">
@@ -41,7 +34,6 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-
     </head>
     <body>
 
@@ -73,62 +65,28 @@
           </nav>
       </header>
       <!--================Slider Area =================-->
-<section id="home">
-  <div class="container">
-    <div class="ddol_test text-center">
-      <img src="img/test/ddol.jpg" style="width:100%; margin-bottom:20px; margin-top:80px;"alt="">
-      <a href="ddol-test1.html"><img src="img/test/start.jpg" style="width:240px; height:60px; margin-bottom:30px;" alt=""></a>
-      <button type="button" name="button" onclick="sharefacebook()" style="width: 135px;background-color: #485995; margin-bottom: 5px; border:0; color: white;"><img src="img\result\facebook.png" alt="">공유 하기</button>
-      <button type="button" id="kakao-link-btn" name="button" style="width: 135px;background-color: #E4D533; margin-bottom: 5px; border:0; color: white;"><img src="img\result\kakao.png" alt="">공유 하기</button>
-      <script type="text/javascript">
-      function sharefacebook(){
-        window.open('http://www.facebook.com/sharer/sharer.php?u=personalitism.shop/ddol.html');
-      }
-      </script>
-    </div>
-  </div>
-</section>
 
-        <script type='text/javascript'>
-          //<![CDATA[
-            // // 사용할 앱의 JavaScript 키를 설정해 주세요.
-            Kakao.init('d0f37cd48affc2f957e92ab6a25a2674');
-            // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
-            Kakao.Link.createDefaultButton({
-              container: '#kakao-link-btn',
-              objectType: 'feed',
-              content: {
-                title: '나의 연애 궁합은?',
-                description: '#성격테스트 #똘끼테스트 #나의연애궁합 #나의성격은',
-                imageUrl: 'http://personalitism.shop/img/test/ddol.jpg',
-                link: {
-                  mobileWebUrl: 'https://personalitism.shop/ddol.html',
-                  webUrl: 'https://personalitism.shop/ddol.html'
-                }
-              },
-              social: {
-                likeCount: 286,
-                commentCount: 45,
-                sharedCount: 845
-              },
-              buttons: [
-                {
-                  title: '웹으로 보기',
-                  link: {
-                    mobileWebUrl: 'https://personalitism.shop/ddol.html',
-                    webUrl: 'https://personalitism.shop/ddol.html'
-                  }
-                },
-                {
-                  title: '앱으로 보기',
-                  link: {
-                    mobileWebUrl: 'https://personalitism.shop/ddol.html',
-                    webUrl: 'https://personalitism.shop/ddol.html'
-                  }
-                }
-              ]
-            });
-          //]]>
+        <script>
+        temp = location.href.split("?");
+        data=temp[1].split(":");
+        num_d = data[0];
+        num_i = data[1];
+        num_s = data[2];
+        num_c = data[3];
+
+        if (num_d>=4) {
+          location.href='ddol_d.html';
+        }
+        if (num_i>=4) {
+          location.href='ddol_i.html';
+        }
+        if (num_s>=4) {
+          location.href='ddol_s.html';
+        }
+        if (num_c>=4) {
+          location.href='ddol_c.html';
+        }
+
         </script>
 
 
@@ -156,9 +114,6 @@
         <script src="js/jquery.form.js"></script>
         <script src="js/jquery.validate.min.js"></script>
         <script src="js/contact.js"></script>
-        <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
-        <!--gmaps Js-->
-        <script src="js/theme.js"></script>
     </body>
 </html>
