@@ -110,6 +110,47 @@
         </section>
         <!--================End Service Area =================-->
 
+        <script type='text/javascript'>
+          //<![CDATA[
+            // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+            Kakao.init('d0f37cd48affc2f957e92ab6a25a2674');
+            // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+            Kakao.Link.createDefaultButton({
+              container: '#kakao-link-btn',
+              objectType: 'feed',
+              content: {
+                title: '나의 연애 궁합은?',
+                description: '#성격테스트 #똘끼테스트 #나의연애궁합 #나의성격은',
+                imageUrl: 'http://personalitism.shop/img/test/ddol.jpg',
+                link: {
+                  mobileWebUrl: 'https://personalitism.shop/ddol',
+                  webUrl: 'https://personalitism.shop/ddol'
+                }
+              },
+              social: {
+                likeCount: 286,
+                commentCount: 45,
+                sharedCount: 845
+              },
+              buttons: [
+                {
+                  title: '웹으로 보기',
+                  link: {
+                    mobileWebUrl: 'https://personalitism.shop/ddol',
+                    webUrl: 'https://personalitism.shop/ddol'
+                  }
+                },
+                {
+                  title: '앱으로 보기',
+                  link: {
+                    mobileWebUrl: 'https://personalitism.shop/ddol',
+                    webUrl: 'https://personalitism.shop/ddol'
+                  }
+                }
+              ]
+            });
+          //]]>
+        </script>
 
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -136,6 +177,7 @@
         <script src="js/jquery.form.js"></script>
         <script src="js/jquery.validate.min.js"></script>
         <script src="js/contact.js"></script>
+          <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
     </body>
 </html>
