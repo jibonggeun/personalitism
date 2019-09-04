@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+      <meta property="og:url"           content="https://www.personalitism.shop/resultD.html"/>
+      <meta property="og:type"          content="website" />
+      <meta property="og:title"         content="Yodfsdfsdfsdfe" />
+      <meta property="og:description"   content="Your dsdfsdfsdfsion" />
+      <meta property="og:image"         content="https://www.personalitism.shop/img/disc_content.png"/>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
+        <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
         <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>성격지상주의</title>
+        <title>ENERGY CAFE</title>
 
         <!-- Icon css link -->
         <link href="vendors/themify-icon/themify-icons.css" rel="stylesheet">
@@ -66,15 +74,6 @@
       </header>
       <!--================Slider Area =================-->
 
-        <script>
-        temp = location.href.split("?");
-        data=temp[1].split(":");
-        num_d = data[0];
-        num_i = data[1];
-        num_s = data[2];
-        num_c = data[3];
-
-        </script>
         <!--================Service Area =================-->
         <section class="our_service_area purple_service">
           <div class="main_title purple_title result_title">
@@ -95,14 +94,25 @@
                   </div>
                   <div class="col-md-12 text-center">
                     <div class="col-md-12">
-                      <button type="button" name="button" style="width: 150px;background-color: #485995; margin-bottom: 5px; border:0; color: white;"><img src="img\result\facebook.png" alt="">공유 하기</button>
-                      <button type="button" name="button" style="width: 150px;background-color: #1AB2E8; margin-bottom: 5px; border:0; color: white;"><img src="img\result\twitter.png" alt="">공유 하기</button>
+                      <button type="button" name="button" onclick="sharefacebook()" style="width: 135px;background-color: #485995; margin-bottom: 5px; border:0; color: white;"><img src="img\result\facebook.png" alt="">공유 하기</button>
+                      <script type="text/javascript">
+                      function sharefacebook(){
+                        window.open('http://www.facebook.com/sharer/sharer.php?u=personalitism.shop/');
+                      }
+                      </script>
+                      <button type="button" name="button" style="width: 135px;background-color: #1AB2E8; margin-bottom: 5px; border:0; color: white;"><img src="img\result\twitter.png" alt="">공유 하기</button>
                     </div>
                   </div>
                   <div class="col-md-12 text-center">
                     <div class="col-md-12">
-                      <button type="button" name="button" style="width: 150px;background-color: #E4D533; margin-bottom: 5px; border:0; color: white;"><img src="img\result\kakao.png" alt="">공유 하기</button>
-                      <button type="button" name="button" style="width: 150px;background-color: #EB5599; margin-bottom: 5px; border:0; color: white;"><img src="img\result\call.png" alt="">상담 예약</button>
+                      <button type="button" id="kakao-link-btn" name="button" style="width: 135px;background-color: #E4D533; margin-bottom: 5px; border:0; color: white;"><img src="img\result\kakao.png" alt="">공유 하기</button>
+                      <button type="button" name="button" onclick="goenergy()" style="width: 135px;background-color: #EB5599; margin-bottom: 5px; border:0; color: white;"><img src="img\result\call.png" alt="">상담 예약
+                        <script type="text/javascript">
+                        function goenergy(){
+                          window.open('https://booking.naver.com/booking/6/bizes/189510?area=ple/');
+                        }
+                        </script>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -110,6 +120,47 @@
         </section>
         <!--================End Service Area =================-->
 
+        <script type='text/javascript'>
+          //<![CDATA[
+            // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+            Kakao.init('d0f37cd48affc2f957e92ab6a25a2674');
+            // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+            Kakao.Link.createDefaultButton({
+              container: '#kakao-link-btn',
+              objectType: 'feed',
+              content: {
+                title: '나의 연애 궁합은?',
+                description: '#성격테스트 #똘끼테스트 #나의연애궁합 #나의성격은',
+                imageUrl: 'http://personalitism.shop/img/test/ddol.jpg',
+                link: {
+                  mobileWebUrl: 'https://personalitism.shop/ddol',
+                  webUrl: 'https://personalitism.shop/ddol'
+                }
+              },
+              social: {
+                likeCount: 286,
+                commentCount: 45,
+                sharedCount: 845
+              },
+              buttons: [
+                {
+                  title: '웹으로 보기',
+                  link: {
+                    mobileWebUrl: 'https://personalitism.shop/ddol',
+                    webUrl: 'https://personalitism.shop/ddol'
+                  }
+                },
+                {
+                  title: '앱으로 보기',
+                  link: {
+                    mobileWebUrl: 'https://personalitism.shop/ddol',
+                    webUrl: 'https://personalitism.shop/ddol'
+                  }
+                }
+              ]
+            });
+          //]]>
+        </script>
 
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -136,6 +187,7 @@
         <script src="js/jquery.form.js"></script>
         <script src="js/jquery.validate.min.js"></script>
         <script src="js/contact.js"></script>
+          <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
     </body>
 </html>
