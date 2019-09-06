@@ -36,7 +36,7 @@
         <![endif]-->
     </head>
     <script>
-      var num_d=0;
+      var num_name=0;
       var num_i=0;
       var num_s=0;
       var num_c=0;
@@ -75,6 +75,7 @@
           <div class="container">
             <div class="main_title purple_title" style="padding: 0;">
                 <h2 style="margin-top: 100px;">회원가입</h2>
+                <h5><br><br>회원가입을 하시면 좀더 자세한 <br><br> DISC정식 테스트를 받을 수 있습니다. </h5>
             </div>
                 <div class="col-md-12">
                     <div class="contact_form_left" style="margin-top: 50px;">
@@ -93,6 +94,11 @@
                                 <div class="form-group col-md-12">
                                   <select class="" name="" style="width:176px; height:34px;">
                                     <option value="">나이 선택</option>
+                                    <option value="">15세</option>
+                                    <option value="">16세</option>
+                                    <option value="">17세</option>
+                                    <option value="">18세</option>
+                                    <option value="">19세</option>
                                     <option value="">20세</option>
                                     <option value="">21세</option>
                                     <option value="">22세</option>
@@ -109,7 +115,16 @@
                                     <option value="">33세</option>
                                     <option value="">34세</option>
                                     <option value="">35세</option>
-                                    <option value="">35세 이상</option>
+                                    <option value="">36세</option>
+                                    <option value="">37세</option>
+                                    <option value="">38세</option>
+                                    <option value="">39세</option>
+                                    <option value="">40세</option>
+                                    <option value="">41세</option>
+                                    <option value="">42세</option>
+                                    <option value="">43세</option>
+                                    <option value="">44세</option>
+                                    <option value="">45세</option>
                                   </select>
                                 </div>
                                 <div class="form-group col-md-12">
@@ -132,6 +147,28 @@
             </div>
           </container>
         </section>
+
+
+        <script type="text/javascript">
+          function button_click_d() {
+            num_d++;
+            location.href="test2.html?" + num_d + ":" + num_i + ":" + num_s + ":" + num_c;
+          }
+          function button_click_i() {
+            num_i++;
+            location.href="test2.html?" + num_d + ":" + num_i + ":" + num_s + ":" + num_c;
+           }
+           function button_click_s() {
+             num_s++;
+             location.href="test2.html?" + num_d + ":" + num_i + ":" + num_s + ":" + num_c;
+            }
+           function button_click_c() {
+             num_c++;
+             location.href="test2.html?" + num_d + ":" + num_i + ":" + num_s + ":" + num_c;
+            }
+         </script>
+
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="js/jquery-2.1.4.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
