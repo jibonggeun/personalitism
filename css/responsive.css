@@ -185,6 +185,26 @@
     .blog_list_area .blog_list_content {
         margin-top: 15px;
     }
+    .ddol_test {
+      width: 49%;
+      float: left;
+      padding: 0;
+      background:white;
+    }
+    .date_test {
+      width: 49%;
+      float: right;
+      padding: 0;
+      background: white;
+    }
+    .test_section {
+      padding: 0;
+      margin-top: 70px;
+      margin-bottom: 30px;
+    }
+    .background {
+      background: #f1f1f1;
+    }
 }
 @media (max-width: 767px){
   .sl-img{
