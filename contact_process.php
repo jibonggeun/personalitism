@@ -1,6 +1,6 @@
 <?php
 
-    $to = "backpiper.com@gmail.com";
+    $to = "llal33@naver.com";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $last = $_REQUEST['last'];
