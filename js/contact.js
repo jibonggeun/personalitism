@@ -1,9 +1,9 @@
 $(document).ready(function(){
-    
+
     (function($) {
         "use strict";
 
-    
+
     jQuery.validator.addMethod('answercheck', function (value, element) {
         return this.optional(element) || /^\bcat\b$/.test(value)
     }, "type the correct answer -_-");
@@ -14,15 +14,15 @@ $(document).ready(function(){
             rules: {
                 name: {
                     required: true,
-                    minlength: 2
+                    minlength: 1
                 },
                 last: {
                     required: true,
-                    minlength: 2
+                    minlength: 1
                 },
                 subject: {
                     required: true,
-                    minlength: 4
+                    minlength: 1
                 },
                 email: {
                     required: true,
@@ -35,19 +35,19 @@ $(document).ready(function(){
             },
             messages: {
                 name: {
-                    required: "come on, you have a name, don't you?",
-                    minlength: "your name must consist of at least 2 characters"
+                    required: "필수항목입니다",
+                    minlength: "필수항목입니다"
                 },
                 last: {
-                    required: "come on, you have a last name, don't you?",
-                    minlength: "your last name must consist of at least 2 characters"
+                    required: "필수항목입니다",
+                    minlength: "필수항목입니다"
                 },
                 subject: {
-                    required: "come on, you have a subject, don't you?",
-                    minlength: "your subject must consist of at least 4 characters"
+                    required: "필수항목입니다",
+                    minlength: "필수항목입니다"
                 },
                 email: {
-                    required: "no email, no message"
+                    required: "필수항목입니다"
                 },
                 message: {
                     required: "um...yea, you have to write something to send this form.",
@@ -76,6 +76,6 @@ $(document).ready(function(){
             }
         })
     })
-        
+
  })(jQuery)
 })
