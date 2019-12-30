@@ -77,21 +77,57 @@
         <!--================Service Area =================-->
         <section class="our_service_area purple_service">
           <div class="main_title purple_title result_title">
-              <h3>유형 별 애인다루기</h3>
+              <h3>유형 애인 다루기</h3>
           </div>
             <div class="container">
-                <div class="row">
+                <div class="row text-center">
+                  <button type="button" name="button" onclick="talkD()">D형 다루기</button>
+                  <button type="button" name="button" onclick="talkI()">I형 다루기</button>
+                  <button type="button" name="button" onclick="talkS()">S형 다루기</button>
+                  <button type="button" name="button" onclick="talkC()">C형 다루기</button>
                   <div class="col-md-12 text-center">
                     <div class="col-md-12">
-                      <img src="img\result\how_d.png" alt="" style="width:100%; height:100%; margin-top:10px">
-                      <img src="img\result\how_i.png" alt="" style="width:100%; height:100%; margin-top:10px">
-                      <img src="img\result\how_s.png" alt="" style="width:100%; height:100%; margin-top:10px">
-                      <img src="img\result\how_c.png" alt="" style="width:100%; height:100%; margin-top:10px">
+                      <img src="img\result\how_d.png" id="d" alt=""style="display: none; width:100%; height:100%; margin-top:10px">
+                      <img src="img\result\how_i.png" id="i" alt="" style="display: none;width:100%; height:100%; margin-top:10px">
+                      <img src="img\result\how_s.png" id="s" alt="" style="display: none;width:100%; height:100%; margin-top:10px">
+                      <img src="img\result\how_c.png" id="c" alt="" style="display: none;width:100%; height:100%; margin-top:10px">
                     </div>
                   </div>
                 </div>
             </div>
         </section>
+        <script language "javascript">
+          function talkD(){
+            document.getElementById("d").style.display = "block";
+            document.getElementById("i").style.display = "none";
+            document.getElementById("s").style.display = "none";
+            document.getElementById("c").style.display = "none";
+          }
+        </script>
+        <script language "javascript">
+          function talkI(){
+            document.getElementById("i").style.display = "block";
+            document.getElementById("d").style.display = "none";
+            document.getElementById("s").style.display = "none";
+            document.getElementById("c").style.display = "none"
+          }
+        </script>
+        <script language "javascript">
+          function talkS(){
+            document.getElementById("s").style.display = "block";
+            document.getElementById("d").style.display = "none";
+            document.getElementById("i").style.display = "none";
+            document.getElementById("c").style.display = "none"
+          }
+        </script>
+        <script language "javascript">
+          function talkC(){
+            document.getElementById("c").style.display = "block";
+            document.getElementById("d").style.display = "none";
+            document.getElementById("i").style.display = "none";
+            document.getElementById("s").style.display = "none"
+          }
+        </script>
         <!--================End Service Area =================-->
 
 
