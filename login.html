@@ -77,96 +77,85 @@
                 <h2 style="margin-top: 100px;">회원가입</h2>
                 <h5><br><br>회원가입을 하시면 좀더 자세한 <br><br> DISC정식 테스트를 받을 수 있습니다. </h5>
             </div>
-                <div class="col-md-12">
-                    <div class="contact_form_left" style="margin-top: 50px;">
-                        <div class="row">
-                            <form class="comment_form_inner" action="contact_process.php" method="post" id="contactForm">
-                              <div class="col-md-12 text-center choose-gender">
-                                <input type="radio" name="group" checked="">남자 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <input type="radio" name="group">여자
-                              </div>
-                                <div class="form-group col-md-12">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="이름">
-                                </div>
-                                <div class="form-group col-md-12">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="이메일">
-                                </div>
-                                <div class="form-group col-md-12">
-                                  <select class="" name="" style="width:176px; height:34px;">
-                                    <option value="">나이 선택</option>
-                                    <option value="">15세</option>
-                                    <option value="">16세</option>
-                                    <option value="">17세</option>
-                                    <option value="">18세</option>
-                                    <option value="">19세</option>
-                                    <option value="">20세</option>
-                                    <option value="">21세</option>
-                                    <option value="">22세</option>
-                                    <option value="">23세</option>
-                                    <option value="">24세</option>
-                                    <option value="">25세</option>
-                                    <option value="">26세</option>
-                                    <option value="">27세</option>
-                                    <option value="">28세</option>
-                                    <option value="">29세</option>
-                                    <option value="">30세</option>
-                                    <option value="">31세</option>
-                                    <option value="">32세</option>
-                                    <option value="">33세</option>
-                                    <option value="">34세</option>
-                                    <option value="">35세</option>
-                                    <option value="">36세</option>
-                                    <option value="">37세</option>
-                                    <option value="">38세</option>
-                                    <option value="">39세</option>
-                                    <option value="">40세</option>
-                                    <option value="">41세</option>
-                                    <option value="">42세</option>
-                                    <option value="">43세</option>
-                                    <option value="">44세</option>
-                                    <option value="">45세</option>
-                                  </select>
-                                </div>
-                                <div class="form-group col-md-12">
-                                    <input type="text" class="form-control" id="num" name="subject" placeholder="전화번호">
-                                </div>
-                                </div>
-                            </form>
-                            <div id="success">
-                                <p>Your text message sent successfully!</p>
-                            </div>
-                            <div id="error">
-                                <p>Sorry! Message not sent. Something went wrong!!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sub_btn col-md-12">
-                        <a class="btn btn-default submit_btn purple_submit" href= "test.html" type="">성격테스트 시작</a>
-                    </div>
-                </div>
+            <form class="text-center" name=frm1 style="margin-top:10px; margin-bottom: 10px;">
+              <input type="radio" name="group" checked="">남자 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="radio" name="group">여자 <br><br>
+              <select class="" name="" style="width:160px; height:34px; margin-bottom: 10px;">
+                <option value="">나이 선택</option>
+                <option value="">15세</option>
+                <option value="">16세</option>
+                <option value="">17세</option>
+                <option value="">18세</option>
+                <option value="">19세</option>
+                <option value="">20세</option>
+                <option value="">21세</option>
+                <option value="">22세</option>
+                <option value="">23세</option>
+                <option value="">24세</option>
+                <option value="">25세</option>
+                <option value="">26세</option>
+                <option value="">27세</option>
+                <option value="">28세</option>
+                <option value="">29세</option>
+                <option value="">30세</option>
+                <option value="">31세</option>
+                <option value="">32세</option>
+                <option value="">33세</option>
+                <option value="">34세</option>
+                <option value="">35세</option>
+                <option value="">36세</option>
+                <option value="">37세</option>
+                <option value="">38세</option>
+                <option value="">39세</option>
+                <option value="">40세</option>
+                <option value="">41세</option>
+                <option value="">42세</option>
+                <option value="">43세</option>
+                <option value="">44세</option>
+                <option value="">45세</option>
+              </select><br>
+              이름: <input type=text name=input1 onblur="check_input1_onblur()"><br>
+              번호: <input type=text name=input2 onblur="check_input2_onblur()"><br>
+              메일: <input type=text name=input3 onblur="check_input3_onblur()"><br>
+              <script language "javascript">
+                function check_input1_onblur(){
+                  var theForm=document.frm1;
+                  if(theForm.input1.value == ""){
+                    alert("한글자 이상 써주세요");
+                  }
+                }
+                function check_input2_onblur(){
+                  var theForm=document.frm1;
+                  if(isNaN(theForm.input2.value)){
+                    alert("숫자만 입력해주세요");
+                  }
+                }
+                function check_input3_onblur(){
+                  var theForm=document.frm1;
+                  var find = ".com";
+                  if(input3.indexOf(find) != -1){
+                    alert("이메일 형식을 확인해주세요");
+                  }
+                }
+                function start_test(){
+                  var theForm=document.frm1;
+                  if(theForm.input1.value=="" || theForm.input2.value=="" || theForm.input3.value==""){
+                    alert("미작성 부분이 있습니다. 확인해주세요");
+                  }
+                  else {
+                    location.href="test.html";
+                  }
+                }
+              </script>
+            </form>
+
+            <div class="sub_btn col-md-12">
+                <a class="btn btn-default submit_btn purple_submit" onclick="start_test()" type="">성격테스트 시작</a>
+            </div>
             </div>
           </container>
         </section>
 
-
-        <script type="text/javascript">
-          function button_click_d() {
-            num_d++;
-            location.href="test2.html?" + num_d + ":" + num_i + ":" + num_s + ":" + num_c;
-          }
-          function button_click_i() {
-            num_i++;
-            location.href="test2.html?" + num_d + ":" + num_i + ":" + num_s + ":" + num_c;
-           }
-           function button_click_s() {
-             num_s++;
-             location.href="test2.html?" + num_d + ":" + num_i + ":" + num_s + ":" + num_c;
-            }
-           function button_click_c() {
-             num_c++;
-             location.href="test2.html?" + num_d + ":" + num_i + ":" + num_s + ":" + num_c;
-            }
-         </script>
 
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
