@@ -81,7 +81,7 @@
             <form class="text-center" name=frm1 style="margin-top:10px; margin-bottom: 10px;">
               <input type="radio" name="group" checked="">남자 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <input type="radio" name="group">여자 <br><br>
-              <select class="" name="" style="width:160px; height:34px; margin-bottom: 10px;">
+              <select class="" id="age" name="" style="width:160px; height:34px; margin-bottom: 10px;">
                 <option value="">나이 선택</option>
                 <option value="">15세</option>
                 <option value="">16세</option>
@@ -119,6 +119,8 @@
               번호: <input type=text name=input2 onblur="check_input2_onblur()"><br>
               메일: <input type=text name=input3 onblur="check_input3_onblur()"><br>
               <script language "javascript">
+                var age=document.getElementById("age");
+
                 function check_input1_onblur(){
                   var theForm=document.frm1;
                   if(theForm.input1.value == ""){
@@ -139,9 +141,10 @@
                     alert("이메일 형식을 확인해주세요");
                   }
                 }
+
                 function start_test(){
                   var theForm=document.frm1;
-                  if(theForm.input1.value=="" || theForm.input2.value=="" || theForm.input3.value==""){
+                  if(age.options[age.selectedIndex].value==0 || theForm.input1.value=="" || theForm.input2.value=="" || theForm.input3.value==""){
                     alert("미작성 부분이 있습니다. 확인해주세요");
                   }
                   else {
