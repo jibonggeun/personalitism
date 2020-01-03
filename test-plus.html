@@ -70,10 +70,11 @@
                   <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav navbar-right">
-                          <li><a href="index.html#home">성격테스트</a></li>
-                          <li><a href="index.html#blog">Making 기업 소개</a></li>
-                          <li><a href="index.html#disc">DISC 행동유형이란?</a></li>
-                          <li><a href="index.html#service_info">App 서비스 소개</a></li>
+                        <li><a href="index.html">성격테스트</a></li>
+                        <li><a href="intro_company.html">Making 기업 소개</a></li>
+                        <li><a href="disc.html">DISC 행동유형이란?</a></li>
+                        <li><a href="https://store.naver.com/restaurants/detail?id=35326840/">DISC 오프라인 상담 예약</a></li>
+                        <li><a href="">성격기반 네트워킹 APP (출시 예정)</a></li>
                       </ul>
                   </div><!-- /.navbar-collapse -->
               </div><!-- /.container-fluid -->
@@ -110,81 +111,81 @@
         var target2=document.getElementById("second");
         function plusresult() {
           if(target1.options[target1.selectedIndex].value==0 || target2.options[target2.selectedIndex].value==0){
-          alert('성격을 제대로 선택해주세요' + target2.options[target2.selectedIndex].value);
+          alert('성격을 제대로 선택해주세요');
           }
           if(target1.options[target1.selectedIndex].value==1){
             if(target2.options[target2.selectedIndex].value==1){
               location.href="hap_dd.html"
-              alert('DD');
+
             }
             else if (target2.options[target2.selectedIndex].value==2) {
               location.href="hap_di.html"
-              alert('DI');
+
             }
             else if (target2.options[target2.selectedIndex].value==3) {
               location.href="hap_ds.html"
-              alert('DS');
+
             }
             else if (target2.options[target2.selectedIndex].value==4) {
               location.href="hap_dc.html"
-              alert('DC');
+
             }
           }
 
           if(target1.options[target1.selectedIndex].value==2){
             if(target2.options[target2.selectedIndex].value==1){
               location.href="hap_id.html"
-              alert('ID');
+
             }
             else if (target2.options[target2.selectedIndex].value==2) {
               location.href="hap_ii.html"
-              alert('II');
+
             }
             else if (target2.options[target2.selectedIndex].value==3) {
               location.href="hap_is.html"
-              alert('IS');
+
             }
             else if (target2.options[target2.selectedIndex].value==4) {
               location.href="hap_ic.html"
-              alert('IC');
+
             }
           }
 
           if(target1.options[target1.selectedIndex].value==3){
             if(target2.options[target2.selectedIndex].value==1){
               location.href="hap_sd.html"
-              alert('SD');
+
             }
             else if (target2.options[target2.selectedIndex].value==2) {
               location.href="hap_si.html"
-              alert('SI');
+
             }
             else if (target2.options[target2.selectedIndex].value==3) {
               location.href="hap_ss.html"
-              alert('SS');
+
             }
             else if (target2.options[target2.selectedIndex].value==4) {
               location.href="sc.html"
-              alert('SC');
+
             }
           }
 
           if(target1.options[target1.selectedIndex].value==4){
             if(target2.options[target2.selectedIndex].value==1){
               location.href="hap_cd.html"
-              alert('CD');
+
             }
             else if (target2.options[target2.selectedIndex].value==2) {
               location.href="hap_ci.html"
-              alert('CI');
+
             }
             else if (target2.options[target2.selectedIndex].value==3) {
               location.href="hap_cs.html"
-              alert('CS');
+
             }
             else if (target2.options[target2.selectedIndex].value==4) {
               location.href="hap_cc.html"
-              alert('CC');
+
             }
           }
         }
