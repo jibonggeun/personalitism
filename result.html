@@ -79,6 +79,56 @@
           location.href='resultD_I_.html';
         }
 
+        if(num_d <= 10 && num_i <= 10 && num_s <= 10 && num_c <= 10){
+          if(num_d>=num_i && num_d>=num_s && num_d>=num_c ){
+            if(num_i >= num_s && num_i >= num_c){
+              location.href='resultDI_.html'
+            }
+            if(num_s > num_i && num_s >= num_c){
+              location.href='resultDS_.html'
+            }
+            if(num_c > num_i && num_c >= num_s){
+              location.href='resultDC_.html'
+            }
+          }
+
+          if(num_i>num_d && num_i>=num_s && num_i>=num_c ){
+            if(num_d >= num_i && num_d >= num_c){
+              location.href='resultID_.html'
+            }
+            if(num_s > num_d && num_s >= num_c){
+              location.href='resultIS_.html'
+            }
+            if(num_c > num_d && num_c >= num_s){
+              location.href='resultIC_.html'
+            }
+          }
+
+          if(num_s>num_d && num_s>num_i && num_s>=num_c ){
+            if(num_d >= num_i && num_d >= num_c){
+              location.href='resultSD_.html'
+            }
+            if(num_i > num_d && num_i >= num_c){
+              location.href='resultSI_.html'
+            }
+            if(num_c > num_d && num_c > num_i){
+              location.href='resultSC_.html'
+            }
+          }
+
+          if(num_c>num_d && num_c>num_i && num_c>num_s ){
+            if(num_d >= num_i && num_d >= num_s){
+              location.href='resultCD_.html'
+            }
+            if(num_i > num_d && num_i >= num_s){
+              location.href='resultCI_.html'
+            }
+            if(num_s > num_d && num_s > num_i){
+              location.href='resultCS_.html'
+            }
+          }
+
+        }
         if (num_d>=19) {
           location.href='resultD.html';
           if (num_i>=7) {
