@@ -65,265 +65,933 @@
               </div><!-- /.container-fluid -->
           </nav>
       </header>
-      <!--================Slider Area =================-->
 
         <script>
-        temp = location.href.split("?");
-        data=temp[1].split(":");
-        num_d = data[0];
-        num_i = data[1];
-        num_s = data[2];
-        num_c = data[3];
+          temp = location.href.split("?");
+          data=temp[1].split(":");
+          num_d = data[0];
+          num_i = data[1];
+          num_s = data[2];
+          num_c = data[3];
 
-        if (num_d==7 && num_i==7 && num_s==7 && num_c==7) {
-          location.href='resultD_I_.html';
-        }
-
-        if(num_d <= 10 && num_i <= 10 && num_s <= 10 && num_c <= 10){
-          if(num_d>=num_i && num_d>=num_s && num_d>=num_c ){
-            if(num_i >= num_s && num_i >= num_c){
-              location.href='resultDI_.html'
-            }
-            if(num_s > num_i && num_s >= num_c){
-              location.href='resultDS_.html'
-            }
-            if(num_c > num_i && num_c >= num_s){
-              location.href='resultDC_.html'
-            }
+          //매우강한 D,I,S,C 성격
+          if(11 <= num_d && num_i < 7 && num_s < 7 && num_c < 7){
+            location.href='resultD.html';
+          }
+          if(11 <= num_i && num_d < 7 && num_s < 7 && num_c < 7){
+            location.href='resultI.html';
+          }
+          if(11 <= num_s && num_d < 7 && num_i < 7 && num_c < 7){
+            location.href='resultS.html';
+          }
+          if(11 <= num_c && num_d < 7 && num_i < 7 && num_s < 7){
+            location.href='resultC.html';
           }
 
-          if(num_i>num_d && num_i>=num_s && num_i>=num_c ){
-            if(num_d >= num_s && num_d >= num_c){
-              location.href='resultID_.html'
-            }
-            if(num_s > num_d && num_s >= num_c){
-              location.href='resultIS_.html'
-            }
-            if(num_c > num_d && num_c >= num_s){
-              location.href='resultIC_.html'
-            }
-          }
+          //강한 D + 강한 I,S,C
 
-          if(num_s>num_d && num_s>num_i && num_s>=num_c ){
-            if(num_d >= num_i && num_d >= num_c){
-              location.href='resultSD_.html'
+          if(num_d == 17){
+            if(num_i == 11){
+              location.href='resultDI.html';
             }
-            if(num_i > num_d && num_i >= num_c){
-              location.href='resultSI_.html'
+            if(num_s == 11){
+              location.href='resultDS.html';
             }
-            if(num_c > num_d && num_c > num_i){
-              location.href='resultSC_.html'
+            if(num_c == 11){
+              location.href='resultDC.html';
             }
           }
 
-          if(num_c>num_d && num_c>num_i && num_c>num_s ){
-            if(num_d >= num_i && num_d >= num_s){
-              location.href='resultCD_.html'
+          if(num_d == 16){
+            if(11 <= num_i <= 12){
+              location.href='resultDI.html';
             }
-            if(num_i > num_d && num_i >= num_s){
-              location.href='resultCI_.html'
+            if(11 <= num_s <= 12){
+              location.href='resultDS.html';
             }
-            if(num_s > num_d && num_s > num_i){
-              location.href='resultCS_.html'
+            if(11 <= num_c <= 12){
+              location.href='resultDC.html';
             }
           }
 
-        }
-        if (num_d>=19) {
-          location.href='resultD.html';
-          if (num_i>=7) {
-            location.href='resultDI_.html';
-          }
-          else if (num_s>=7) {
-            location.href='resultDS_.html';
-          }
-          else if (num_c>=7) {
-            location.href='resultDC_.html';
-          }
-        }
-        else {
-          if (num_d>=11) {
-            if (num_d>=15) {
-              location.href='resultD.html';
+          if(num_d == 15){
+            if(11 <= num_i <= 13){
+              location.href='resultDI.html';
             }
-            if (num_i>=11) {
-              if (num_d>=num_i) {
-                location.href='resultDI.html';
-              }
+            if(11 <= num_s <= 13){
+              location.href='resultDS.html';
             }
-            else if (num_i>=7) {
+            if(11 <= num_c <= 13){
+              location.href='resultDC.html';
+            }
+          }
+
+          if(num_d == 14){
+            if(11 <= num_i <= 14){
+              location.href='resultDI.html';
+            }
+            if(11 <= num_s <= 14){
+              location.href='resultDS.html';
+            }
+            if(11 <= num_c <= 14){
+              location.href='resultDC.html';
+            }
+          }
+
+          if(num_d == 13){
+            if(11 <= num_i <= 13){
+              location.href='resultDI.html';
+            }
+            if(11 <= num_s <= 13){
+              location.href='resultDS.html';
+            }
+            if(11 <= num_c <= 13){
+              location.href='resultDC.html';
+            }
+          }
+
+          if(num_d == 12){
+            if(11 <= num_i <= 12){
+              location.href='resultDI.html';
+            }
+            if(11 <= num_s <= 12){
+              location.href='resultDS.html';
+            }
+            if(11 <= num_c <= 12){
+              location.href='resultDC.html';
+            }
+          }
+
+          if(num_d == 11){
+            if(num_i == 11){
+              location.href='resultDI.html';
+            }
+            if(num_s == 11){
+              location.href='resultDS.html';
+            }
+            if(num_c == 11){
+              location.href='resultDC.html';
+            }
+          }
+
+          //강한 I + 강한 D,S,C
+          if(num_i == 17){
+            if(num_d == 11){
+              location.href='resultID.html';
+            }
+            if(num_s == 11){
+              location.href='resultIS.html';
+            }
+            if(num_c == 11){
+              location.href='resultIC.html';
+            }
+          }
+
+          if(num_i == 16){
+            if(11 <= num_d <= 12){
+              location.href='resultID.html';
+            }
+            if(11 <= num_s <= 12){
+              location.href='resultIS.html';
+            }
+            if(11 <= num_c <= 12){
+              location.href='resultIC.html';
+            }
+          }
+
+          if(num_i == 15){
+            if(11 <= num_d <= 13){
+              location.href='resultID.html';
+            }
+            if(11 <= num_s <= 13){
+              location.href='resultIS.html';
+            }
+            if(11 <= num_c <= 13){
+              location.href='resultIC.html';
+            }
+          }
+
+          if(num_i == 14){
+            if(11 <= num_d <= 13){
+              location.href='resultID.html';
+            }
+            if(11 <= num_s <= 14){
+              location.href='resultIS.html';
+            }
+            if(11 <= num_c <= 14){
+              location.href='resultIC.html';
+            }
+          }
+
+          if(num_i == 13){
+            if(11 <= num_d <= 12){
+              location.href='resultID.html';
+            }
+            if(11 <= num_s <= 13){
+              location.href='resultIS.html';
+            }
+            if(11 <= num_c <= 13){
+              location.href='resultIC.html';
+            }
+          }
+
+          if(num_i == 12){
+            if( num_d == 11){
+              location.href='resultID.html';
+            }
+            if(11 <= num_s <= 12){
+              location.href='resultIS.html';
+            }
+            if(11 <= num_c <= 12){
+              location.href='resultIC.html';
+            }
+          }
+
+          if(num_i == 11){
+            if(num_s == 11){
+              location.href='resultIS.html';
+            }
+            if(num_c == 11){
+              location.href='resultIC.html';
+            }
+          }
+
+          //강한 S + 강한 D,I,C
+          if(num_s == 17){
+            if(num_d == 11){
+              location.href='resultSD.html';
+            }
+            if(num_i == 11){
+              location.href='resultSI.html';
+            }
+            if(num_c == 11){
+              location.href='resultSC.html';
+            }
+          }
+
+          if(num_s == 16){
+            if(11 <= num_d <= 12){
+              location.href='resultSD.html';
+            }
+            if(11 <= num_i <= 12){
+              location.href='resultSI.html';
+            }
+            if(11 <= num_c <= 12){
+              location.href='resultSC.html';
+            }
+          }
+
+          if(num_s == 15){
+            if(11 <= num_d <= 13){
+              location.href='resultSD.html';
+            }
+            if(11 <= num_i <= 13){
+              location.href='resultSI.html';
+            }
+            if(11 <= num_c <= 13){
+              location.href='resultSC.html';
+            }
+          }
+
+          if(num_s == 14){
+            if(11 <= num_d <= 13){
+              location.href='resultSD.html';
+            }
+            if(11 <= num_i <= 13){
+              location.href='resultSI.html';
+            }
+            if(11 <= num_c <= 14){
+              location.href='resultSC.html';
+            }
+          }
+
+          if(num_s == 13){
+            if(11 <= num_d <= 12){
+              location.href='resultSD.html';
+            }
+            if(11 <= num_i <= 12){
+              location.href='resultSI.html';
+            }
+            if(11 <= num_c <= 13){
+              location.href='resultSC.html';
+            }
+          }
+          if(num_s == 12){
+            if(num_d == 11){
+              location.href='resultSD.html';
+            }
+            if(num_i == 11){
+              location.href='resultSI.html';
+            }
+            if(11 <= num_c <= 12){
+              location.href='resultSC.html';
+            }
+          }
+
+          if(num_s == 11){
+            if(num_c == 11){
+              location.href='resultSC.html';
+            }
+          }
+
+          //강한 C + 강한 D,I,S
+          if(num_c == 17){
+            if(num_d == 11){
+              location.href='resultCD.html';
+            }
+            if(num_i == 11){
+              location.href='resultCI.html';
+            }
+            if(num_s == 11){
+              location.href='resultCS.html';
+            }
+          }
+
+          if(num_c == 16){
+            if(11 <= num_d <= 12){
+              location.href='resultCD.html';
+            }
+            if(11 <= num_i <= 12){
+              location.href='resultCI.html';
+            }
+            if(11 <= num_s <= 12){
+              location.href='resultCS.html';
+            }
+          }
+
+          if(num_c == 15){
+            if(11 <= num_d <= 13){
+              location.href='resultCD.html';
+            }
+            if(11 <= num_i <= 13){
+              location.href='resultCI.html';
+            }
+            if(11 <= num_s <= 13){
+              location.href='resultCS.html';
+            }
+          }
+
+          if(num_c == 14){
+            if(11 <= num_d <= 13){
+              location.href='resultCD.html';
+            }
+            if(11 <= num_i <= 13){
+              location.href='resultCI.html';
+            }
+            if(11 <= num_s <= 13){
+              location.href='resultCS.html';
+            }
+          }
+
+          if(num_c == 13){
+            if(11 <= num_d <= 12){
+              location.href='resultCD.html';
+            }
+            if(11 <= num_i <= 12){
+              location.href='resultCI.html';
+            }
+            if(11 <= num_s <= 12){
+              location.href='resultCS.html';
+            }
+          }
+
+          if(num_c == 12){
+            if(num_d == 11){
+              location.href='resultCD.html';
+            }
+            if(num_i == 11){
+              location.href='resultCI.html';
+            }
+            if(num_s == 11){
+              location.href='resultCS.html';
+            }
+          }
+
+          //강한 D + 그냥 I,S,C
+          if(num_d == 21){
+            if(num_i == 7){
               location.href='resultDI_.html';
             }
-
-            if (num_s>=11) {
-              if (num_d>num_s) {
-                location.href='resultDS.html';
-              }
-            }
-            else if (num_s>=7) {
+            if(num_s == 7){
               location.href='resultDS_.html';
             }
-
-            if (num_c>=11) {
-              if (num_d>num_c) {
-                location.href='resultDC.html';
-              }
-            }
-            else if (num_c>=7) {
+            if(num_c == 7){
               location.href='resultDC_.html';
             }
           }
-        }
 
+          if(num_d == 20){
+            if(7<= num_i <= 8){
+              location.href='resultDI_.html';
+            }
+            if(7<= num_s <= 8){
+              location.href='resultDS_.html';
+            }
+            if(7<= num_c <= 8){
+              location.href='resultDC_.html';
+            }
+          }
 
-        if (num_i>=19) {
-          location.href='resultI.html';
-          if (num_d>=7) {
-            location.href='resultID_.html';
-          }
-          else if (num_s>=7) {
-            location.href='resultIS_.html';
-          }
-          else if (num_c>=7) {
-            location.href='resultIC_.html';
-          }
-        }
-        else {
-          if (num_i>=11) {
-            if (num_i>=15) {
-              location.href='resultI.html';
+          if(num_d == 19){
+            if(7<= num_i <= 9){
+              location.href='resultDI_.html';
             }
-            if (num_d>=11) {
-              if (num_i>num_d) {
-                location.href='resultID.html';
-              }
+            if(7<= num_s <= 9){
+              location.href='resultDS_.html';
             }
-            else if (num_d>=7) {
+            if(7<= num_c <= 9){
+              location.href='resultDC_.html';
+            }
+          }
+
+          if(num_d == 18){
+            if(7<= num_i <= 10){
+              location.href='resultDI_.html';
+            }
+            if(7<= num_s <= 10){
+              location.href='resultDS_.html';
+            }
+            if(7<= num_c <= 10){
+              location.href='resultDC_.html';
+            }
+          }
+
+          if(num_d == 17){
+            if(7<= num_i <= 10){
+              location.href='resultDI_.html';
+            }
+            if(7<= num_s <= 10){
+              location.href='resultDS_.html';
+            }
+            if(7<= num_c <= 10){
+              location.href='resultDC_.html';
+            }
+          }
+
+          if(num_d == 16){
+            if(7<= num_i <= 10){
+              location.href='resultDI_.html';
+            }
+            if(7<= num_s <= 10){
+              location.href='resultDS_.html';
+            }
+            if(7<= num_c <= 10){
+              location.href='resultDC_.html';
+            }
+          }
+
+          if(num_d == 15){
+            if(7<= num_i <= 10){
+              location.href='resultDI_.html';
+            }
+            if(7<= num_s <= 10){
+              location.href='resultDS_.html';
+            }
+            if(7<= num_c <= 10){
+              location.href='resultDC_.html';
+            }
+          }
+
+          if(num_d == 14){
+            if(7<= num_i <= 10){
+              location.href='resultDI_.html';
+            }
+            if(7<= num_s <= 10 && num_i < 7){
+              location.href='resultDS_.html';
+            }
+            if(7<= num_c <= 10 && num_i < 7 && num_s < 7){
+              location.href='resultDC_.html';
+            }
+          }
+
+          if(num_d == 13){
+            if(7<= num_i <= 10){
+              location.href='resultDI_.html';
+            }
+            if(7<= num_s <= 10 && num_i < 7){
+              location.href='resultDS_.html';
+            }
+            if(7<= num_c <= 10 && num_i < 7 && num_s < 7){
+              location.href='resultDC_.html';
+            }
+          }
+
+          if(num_d == 12){
+            if(7<= num_i <= 10){
+              location.href='resultDI_.html';
+            }
+            if(7<= num_s <= 10 && num_i < 7){
+              location.href='resultDS_.html';
+            }
+            if(7<= num_c <= 10 && num_i < 7 && num_s < 7){
+              location.href='resultDC_.html';
+            }
+          }
+
+          if(num_d == 11){
+            if(7<= num_i <= 10){
+              location.href='resultDI_.html';
+            }
+            if(7<= num_s <= 10 && num_i < 7){
+              location.href='resultDS_.html';
+            }
+            if(7<= num_c <= 10 && num_i < 7 && num_s < 7){
+              location.href='resultDC_.html';
+            }
+          }
+
+          //강한 I + 그냥 D,S,C
+          if(num_i == 21){
+            if(num_d == 7){
               location.href='resultID_.html';
             }
-
-            if (num_s>=11) {
-              if (num_i>=num_s) {
-                location.href='resultIS.html';
-              }
-            }
-            else if (num_s>=7) {
+            if(num_s == 7){
               location.href='resultIS_.html';
             }
-
-            if (num_c>=11) {
-              if (num_i>=num_c) {
-                location.href='resultIC.html';
-              }
-            }
-            else if (num_c>=7) {
+            if(num_c == 7){
               location.href='resultIC_.html';
             }
           }
-        }
 
+          if(num_i == 20){
+            if(7<= num_d <= 8){
+              location.href='resultID_.html';
+            }
+            if(7<= num_s <= 8){
+              location.href='resultIS_.html';
+            }
+            if(7<= num_c <= 8){
+              location.href='resultIC_.html';
+            }
+          }
 
-        if (num_s>=19) {
-          location.href='resultS.html';
-          if (num_d>=7) {
-            location.href='resultSD_.html';
-          }
-          else if (num_i>=7) {
-            location.href='resultSI_.html';
-          }
-          else if (num_c>=7) {
-            location.href='resultSC_.html';
-          }
-        }
-        else {
-          if (num_s>=11) {
-            if (num_s>=15) {
-              location.href='resultS.html';
+          if(num_i == 19){
+            if(7<= num_d <= 9){
+              location.href='resultID_.html';
             }
-            if (num_d>=11) {
-              if (num_s>num_d) {
-                location.href='resultSD.html';
-              }
+            if(7<= num_s <= 9){
+              location.href='resultIS_.html';
             }
-            else if (num_d>=7) {
+            if(7<= num_c <= 9){
+              location.href='resultIC_.html';
+            }
+          }
+
+          if(num_i == 18){
+            if(7<= num_d <= 10){
+              location.href='resultID_.html';
+            }
+            if(7<= num_s <= 10){
+              location.href='resultIS_.html';
+            }
+            if(7<= num_c <= 10){
+              location.href='resultIC_.html';
+            }
+          }
+
+          if(num_i == 17){
+            if(7<= num_d <= 10){
+              location.href='resultID_.html';
+            }
+            if(7<= num_s <= 10){
+              location.href='resultIS_.html';
+            }
+            if(7<= num_c <= 10){
+              location.href='resultIC_.html';
+            }
+          }
+
+          if(num_i == 16){
+            if(7<= num_d <= 10){
+              location.href='resultID_.html';
+            }
+            if(7<= num_s <= 10){
+              location.href='resultIS_.html';
+            }
+            if(7<= num_c <= 10){
+              location.href='resultIC_.html';
+            }
+          }
+
+          if(num_i == 15){
+            if(7<= num_d <= 10){
+              location.href='resultID_.html';
+            }
+            if(7<= num_s <= 10){
+              location.href='resultIS_.html';
+            }
+            if(7<= num_c <= 10){
+              location.href='resultIC_.html';
+            }
+          }
+
+          if(num_i == 14){
+            if(7<= num_d <= 10){
+              location.href='resultID_.html';
+            }
+            if(7<= num_s <= 10 && num_d <7){
+              location.href='resultIS_.html';
+            }
+            if(7<= num_c <= 10 && num_d < 7 && num_s < 7){
+              location.href='resultIC_.html';
+            }
+          }
+
+          if(num_i == 13){
+            if(7<= num_d <= 10){
+              location.href='resultID_.html';
+            }
+            if(7<= num_s <= 10 && num_d <7){
+              location.href='resultIS_.html';
+            }
+            if(7<= num_c <= 10 && num_d < 7 && num_s < 7){
+              location.href='resultIC_.html';
+            }
+          }
+
+          if(num_i == 12){
+            if(7<= num_d <= 10){
+              location.href='resultID_.html';
+            }
+            if(7<= num_s <= 10 && num_d <7){
+              location.href='resultIS_.html';
+            }
+            if(7<= num_c <= 10 && num_d < 7 && num_s < 7){
+              location.href='resultIC_.html';
+            }
+          }
+
+          if(num_i == 11){
+            if(7<= num_d <= 10){
+              location.href='resultID_.html';
+            }
+            if(7<= num_s <= 10 && num_d <7){
+              location.href='resultIS_.html';
+            }
+            if(7<= num_c <= 10 && num_d < 7 && num_s < 7){
+              location.href='resultIC_.html';
+            }
+          }
+
+          //강한 S + 그냥 D,I,C
+          if(num_s == 21){
+            if(num_d == 7){
               location.href='resultSD_.html';
             }
-
-            if (num_i>=11) {
-              if (num_s>num_i) {
-                location.href='resultSI.html';
-              }
-            }
-            else if (num_i>=7) {
+            if(num_i == 7){
               location.href='resultSI_.html';
             }
-
-            if (num_c>=11) {
-              if (num_s>=num_c) {
-                location.href='resultSC.html';
-              }
-            }
-            else if (num_c>=7) {
+            if(num_c == 7){
               location.href='resultSC_.html';
             }
           }
-        }
 
-        if (num_c>=19) {
-          location.href='resultC.html';
-          if (num_d>=7) {
-            location.href='resultCD_.html';
-          }
-          else if (num_s>=7) {
-            location.href='resultCS_.html';
-          }
-          else if (num_i>=7) {
-            location.href='resultCI_.html';
-          }
-        }
-        else {
-          if (num_c>=11) {
-            if (num_c>=15) {
-              location.href='resultC.html';
+          if(num_s == 20){
+            if(7<= num_d <= 8){
+              location.href='resultSD_.html';
             }
-            if (num_d>=11) {
-              if (num_c>num_d) {
-                location.href='resultCD.html';
-              }
+            if(7<= num_I <= 8){
+              location.href='resultSI_.html';
             }
-            else if (num_d>=7) {
+            if(7<= num_c <= 8){
+              location.href='resultSC_.html';
+            }
+          }
+
+          if(num_s == 19){
+            if(7<= num_d <= 9){
+              location.href='resultSD_.html';
+            }
+            if(7<= num_I <= 9){
+              location.href='resultSI_.html';
+            }
+            if(7<= num_c <= 9){
+              location.href='resultSC_.html';
+            }
+          }
+
+          if(num_s == 18){
+            if(7<= num_d <= 10){
+              location.href='resultSD_.html';
+            }
+            if(7<= num_I <= 10){
+              location.href='resultSI_.html';
+            }
+            if(7<= num_c <= 10){
+              location.href='resultSC_.html';
+            }
+          }
+
+          if(num_s == 17){
+            if(7<= num_d <= 10){
+              location.href='resultSD_.html';
+            }
+            if(7<= num_I <= 10){
+              location.href='resultSI_.html';
+            }
+            if(7<= num_c <= 10){
+              location.href='resultSC_.html';
+            }
+          }
+
+          if(num_s == 16){
+            if(7<= num_d <= 10){
+              location.href='resultSD_.html';
+            }
+            if(7<= num_I <= 10){
+              location.href='resultSI_.html';
+            }
+            if(7<= num_c <= 10){
+              location.href='resultSC_.html';
+            }
+          }
+
+          if(num_s == 15){
+            if(7<= num_d <= 10){
+              location.href='resultSD_.html';
+            }
+            if(7<= num_I <= 10){
+              location.href='resultSI_.html';
+            }
+            if(7<= num_c <= 10){
+              location.href='resultSC_.html';
+            }
+          }
+
+          if(num_s == 14){
+            if(7<= num_d <= 10){
+              location.href='resultSD_.html';
+            }
+            if(7<= num_I <= 10 && num_d < 7){
+              location.href='resultSI_.html';
+            }
+            if(7<= num_c <= 10 && num_d < 7 && num_I < 7){
+              location.href='resultSC_.html';
+            }
+          }
+
+          if(num_s == 13){
+            if(7<= num_d <= 10){
+              location.href='resultSD_.html';
+            }
+            if(7<= num_I <= 10 && num_d < 7){
+              location.href='resultSI_.html';
+            }
+            if(7<= num_c <= 10 && num_d < 7 && num_I < 7){
+              location.href='resultSC_.html';
+            }
+          }
+
+          if(num_s == 12){
+            if(7<= num_d <= 10){
+              location.href='resultSD_.html';
+            }
+            if(7<= num_I <= 10 && num_d < 7){
+              location.href='resultSI_.html';
+            }
+            if(7<= num_c <= 10 && num_d < 7 && num_I < 7){
+              location.href='resultSC_.html';
+            }
+          }
+
+          if(num_s == 11){
+            if(7<= num_d <= 10){
+              location.href='resultSD_.html';
+            }
+            if(7<= num_I <= 10 && num_d < 7){
+              location.href='resultSI_.html';
+            }
+            if(7<= num_c <= 10 && num_d < 7 && num_I < 7){
+              location.href='resultSC_.html';
+            }
+          }
+
+          //강한 C + 그냥 D,I,S
+          if(num_c == 21){
+            if(num_d == 7){
               location.href='resultCD_.html';
             }
-
-            if (num_i>=11) {
-              if (num_c>num_i) {
-                location.href='resultCI.html';
-              }
-            }
-            else if (num_i>=7) {
+            if(num_i == 7){
               location.href='resultCI_.html';
             }
-
-            if (num_s>=11) {
-              if (num_c>=num_s) {
-                location.href='resultCS.html';
-              }
-            }
-            else if (num_s>=7) {
+            if(num_s == 7){
               location.href='resultCS_.html';
             }
           }
-        }
 
+          if(num_c == 20){
+            if(7<= num_d <= 8){
+              location.href='resultCD_.html';
+            }
+            if(7<= num_I <= 8){
+              location.href='resultCI_.html';
+            }
+            if(7<= num_s <= 8){
+              location.href='resultCS_.html';
+            }
+          }
 
+          if(num_c == 19){
+            if(7<= num_d <= 9){
+              location.href='resultCD_.html';
+            }
+            if(7<= num_I <= 9){
+              location.href='resultCI_.html';
+            }
+            if(7<= num_s <= 9){
+              location.href='resultCS_.html';
+            }
+          }
 
+          if(num_c == 18){
+            if(7<= num_d <= 10){
+              location.href='resultCD_.html';
+            }
+            if(7<= num_I <= 10){
+              location.href='resultCI_.html';
+            }
+            if(7<= num_s <= 10){
+              location.href='resultCS_.html';
+            }
+          }
 
+          if(num_c == 17){
+            if(7<= num_d <= 10){
+              location.href='resultCD_.html';
+            }
+            if(7<= num_I <= 10){
+              location.href='resultCI_.html';
+            }
+            if(7<= num_s <= 10){
+              location.href='resultCS_.html';
+            }
+          }
 
+          if(num_c == 16){
+            if(7<= num_d <= 10){
+              location.href='resultCD_.html';
+            }
+            if(7<= num_I <= 10){
+              location.href='resultCI_.html';
+            }
+            if(7<= num_s <= 10){
+              location.href='resultCS_.html';
+            }
+          }
 
+          if(num_c == 15){
+            if(7<= num_d <= 10){
+              location.href='resultCD_.html';
+            }
+            if(7<= num_I <= 10){
+              location.href='resultCI_.html';
+            }
+            if(7<= num_s <= 10){
+              location.href='resultCS_.html';
+            }
+          }
 
+          if(num_c == 14){
+            if(7<= num_d <= 10){
+              location.href='resultCD_.html';
+            }
+            if(7<= num_I <= 10 && num_d < 7){
+              location.href='resultCI_.html';
+            }
+            if(7<= num_s <= 10 && num_d <7 && num_i < 7){
+              location.href='resultCS_.html';
+            }
+          }
+
+          if(num_c == 13){
+            if(7<= num_d <= 10){
+              location.href='resultCD_.html';
+            }
+            if(7<= num_I <= 10 && num_d < 7){
+              location.href='resultCI_.html';
+            }
+            if(7<= num_s <= 10 && num_d <7 && num_i < 7){
+              location.href='resultCS_.html';
+            }
+          }
+
+          if(num_c == 12){
+            if(7<= num_d <= 10){
+              location.href='resultCD_.html';
+            }
+            if(7<= num_I <= 10 && num_d < 7){
+              location.href='resultCI_.html';
+            }
+            if(7<= num_s <= 10 && num_d <7 && num_i < 7){
+              location.href='resultCS_.html';
+            }
+          }
+
+          if(num_c == 11){
+            if(7<= num_d <= 10){
+              location.href='resultCD_.html';
+            }
+            if(7<= num_I <= 10 && num_d < 7){
+              location.href='resultCI_.html';
+            }
+            if(7<= num_s <= 10 && num_d <7 && num_i < 7){
+              location.href='resultCS_.html';
+            }
+          }
+
+          if(num_d < 11 && num_i < 11 && num_s <11 && num_c < 11){ // 전부 11 미만일 때
+            if(num_d >= num_i && num_d >= num_s && num_d >= num_c){   // d가 제일 클 때
+              if(num_i >= num_s && num_i >= num_c){ // i가 s,c 보다 같거나 클 때
+                location.href='resultDI_.html';
+              }
+              if(num_s > num_i && num_s >= num_c){
+                location.href='resultDS_.html';
+              }
+              if(num_c > num_i && num_c > num_s){
+                location.href='resultDC_.html';
+              }
+            }
+
+            if(num_i > num_d && num_i >= num_s && num_i >= num_c){   // i가 제일 클 때
+              if(num_d >= num_s && num_d >= num_c){
+                location.href='resultID_.html';
+              }
+              if(num_s > num_d && num_s >= num_c){
+                location.href='resultIS_.html';
+              }
+              if(num_c > num_d && num_c > num_s){
+                location.href='resultIC_.html';
+              }
+            }
+
+            if(num_s > num_d && num_s > num_i && num_s >= num_c){   // s가 제일 클 때
+              if(num_d >= num_i && num_d >= num_c){
+                location.href='resultSD_.html';
+              }
+              if(num_i > num_d && num_i >= num_c){
+                location.href='resultSI_.html';
+              }
+              if(num_c > num_d && num_c > num_i){
+                location.href='resultSC_.html';
+              }
+            }
+
+            if(num_c > num_d && num_c >= num_i && num_c > num_s){   // c가 제일 클 때
+              if(num_d >= num_i && num_d >= num_s){
+                location.href='resultCD_.html';
+              }
+              if(num_i > num_d && num_i >= num_s){
+                location.href='resultCI_.html';
+              }
+              if(num_s > num_d && num_s > num_i){
+                location.href='resultCS_.html';
+              }
+            }
+            if(num_d == num_i == num_s == num_c){
+              location.href='resultD_I_.html';
+            }
+          }
         </script>
-        <!--================Service Area =================-->
-
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="js/jquery-2.1.4.min.js"></script>
