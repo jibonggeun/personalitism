@@ -129,8 +129,6 @@ body, p, h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #f8395d;
   padding-bottom: 35px;
-  position: relative;
-  display: inline-block;
 }
 
 .main_title h2:before {
