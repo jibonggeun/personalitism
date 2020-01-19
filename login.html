@@ -76,12 +76,12 @@
           <div class="container">
             <div class="main_title purple_title" style="padding: 0;">
                 <h2 style="margin-top: 100px;">회원가입</h2>
-                <h5><br><br>회원가입을 하시면 좀더 자세한 <br><br> DISC정식 테스트를 받을 수 있습니다. </h5>
+                <h5 style="font-weight:bold; margin-bottom: 20px;"><br><br>회원가입을 하시면 좀더 자세한 <br><br> DISC정식 테스트를 받을 수 있습니다.<br><br><br></h5>
             </div>
             <form class="text-center" name=frm1 style="margin-top:10px; margin-bottom: 10px;">
-              <input type="radio" name="group" checked="">남자 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <input type="radio" name="group">여자 <br><br>
-              <select class="" id="age" name="" style="width:160px; height:34px; margin-bottom: 10px;">
+              <input type="radio" name="group" checked="" style="margin-bottom:10px;">남자 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="radio" name="group">여자<br>
+              <select class="" id="age" name="" style="width:160px; height:30px; margin-bottom: 5px;">
                 <option value="">나이 선택</option>
                 <option value="15">15세</option>
                 <option value="16">16세</option>
@@ -115,9 +115,9 @@
                 <option value="44">44세</option>
                 <option value="45">45세 이상</option>
               </select><br>
-              이름: <input type=text name=input1 onblur="check_input1_onblur()"><br>
-              번호: <input type=text name=input2 onblur="check_input2_onblur()"><br>
-              메일: <input type=text name=input3 onblur="check_input3_onblur()"><br>
+              <input type=text placeholder="이름 입력" name=input1 onblur="check_input1_onblur()" style="width:160px; height:30px; margin-bottom: 5px;"><br>
+              <input type=text placeholder="휴대폰 번호 입력" name=input2 onblur="check_input2_onblur()" style="width:160px; height:30px; margin-bottom: 5px;"><br>
+              <input type=text placeholder="이메일 입력" name=input3 onblur="check_input3_onblur()" style="width:160px; height:30px; margin-bottom: 30px;"><br>
               <script language "javascript">
                 var age=document.getElementById("age");
 
