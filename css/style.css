@@ -1072,17 +1072,17 @@ body, p, h1, h2, h3, h4, h5, h6 {
 
 
 .submit_btn.purple_submit.testbtn {
-  border: 1px solid #5D5D5D;
+  border: 1px solid #F15F5F;
 }
 
 .submit_btn.purple_submit.testbtn:before {
-  border-bottom: 80px solid #5D5D5D;
+  border-bottom: 80px solid #F15F5F;
 }
 
 .submit_btn.purple_submit.testbtn:hover, .submit_btn.purple_submit.testbtn:focus {
-  color: #5D5D5D;
+  color: #F15F5F;
   background: transparent;
-  border-color: #5D5D5D;
+  border-color: #F15F5F;
 }
 
 
