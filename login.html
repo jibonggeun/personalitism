@@ -123,15 +123,21 @@
 
                 function check_input1_onblur(){
                   var theForm=document.frm1;
-                  if(theForm.input1.value == ""){
-                    alert("한글자 이상 써주세요");
+                  var str = theForm.input1.value.length;
+                  if(str < "2"){
+                    alert("이름의 경우 두글자 이상 써주세요");
+                    theForm.input1.value = ""
                   }
                 }
                 function check_input2_onblur(){
                   var theForm=document.frm1;
+                  var str = theForm.input2.value.length;
                   if(isNaN(theForm.input2.value)){
                     alert("숫자만 입력해주세요");
-                    theForm.input2.value = ""
+
+                  }
+                  if(str < 10){
+                    alert("10자리 이상 작성해주세요");
                   }
                 }
                 function check_input3_onblur(){
