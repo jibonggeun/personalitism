@@ -74,14 +74,70 @@
           var num_s = data[2];
           var num_c = data[3];
 
-          if(num_d >= 10){
-            if(num_i <= 6){
-              if(num_s <= 6){
-                if(num_c <= 6){//////////d가 10이상이고 모두가 6이하일 때
+
+          ///////////////매우강한
+          if(num_d >= 20){
+            location.href='resultD.html';
+            if(num_i >= 7){
+              location.href='resultD+I--.html';
+            }
+            if(num_s >= 7){
+              location.href='resultD+S--.html';
+            }
+            if(num_c >= 7){
+              location.href='resultD+C--.html';
+            }
+          }
+          if(num_i >= 20){
+            location.href='resultI.html';
+            if(num_d >= 7){
+              location.href='resultI+D--.html';
+            }
+            if(num_s >= 7){
+              location.href='resultI+S--.html';
+            }
+            if(num_c >= 7){
+              location.href='resultI+C--.html';
+            }
+          }
+          if(num_s >= 20){
+            location.href='resultS.html';
+            if(num_i >= 7){
+              location.href='resultS+I--.html';
+            }
+            if(num_d >= 7){
+              location.href='resultS+D--.html';
+            }
+            if(num_c >= 7){
+              location.href='resultS+C--.html';
+            }
+          }
+          if(num_c >= 20){
+            location.href='resultC.html';
+            if(num_i >= 7){
+              location.href='resultC+I--.html';
+            }
+            if(num_s >= 7){
+              location.href='resultC+S--.html';
+            }
+            if(num_d >= 7){
+              location.href='resultC+D--.html';
+            }
+          }
+
+          if(num_d >= 11 && num_d <= 19){
+            if(num_i <= 4){
+              if(num_s <= 4){
+                if(num_c <= 4){//////////d가 10이상이고 모두가 4이하일 때
                   location.href='resultD.html';
                 }
                 else if(num_d-num_c >= 0){
-                  location.href='resultDC.html';
+                  if(num_c >=11){
+                    location.href='resultDC.html';
+                  }
+                  else {
+                    location.href='resultDC--.html';
+                  }
                 }
                 else{
                   location.href='resultCD.html';
@@ -89,10 +145,20 @@
               }
               else {  ////////s가 7이상이고
                 if(num_s-num_c >= 0){
-                  location.href='resultDS.html';
+                  if(num_s >=11){
+                    location.href='resultDS.html';
+                  }
+                  else {
+                    location.href='resultDS--.html';
+                  }
                 }
                 else{
-                  location.href='resultDC.html';
+                  if(num_c >=11){
+                    location.href='resultDC.html';
+                  }
+                  else {
+                    location.href='resultDC--.html';
+                  }
                 }
                 if(num_d-num_s < 0){
                   location.href='resultSD.html';
@@ -101,17 +167,32 @@
             }
             else if(num_d-num_i >= 0){/////I가 7이상이고 d가 같거나 클때
               if((num_i-num_s) >= 0 && (num_i-num_c) >= 0){
-                location.href='resultDI.html';
+                if(num_i >=11){
+                  location.href='resultDI.html';
+                }
+                else {
+                  location.href='resultDI--.html';
+                }
               }
               else {
                 if(num_s-num_c >= 0 ){
-                  location.href='resultDS.html';
+                  if(num_s >=11){
+                    location.href='resultDS.html';
+                  }
+                  else {
+                    location.href='resultDS--.html';
+                  }
                   if(num_s-num_d > 0){
                     location.href='resultSD.html';
                   }
                 }
                 else{
-                  location.href='resultDC.html';
+                  if(num_c >=11){
+                    location.href='resultDC.html';
+                  }
+                  else {
+                    location.href='resultDC--.html';
+                  }
                   if(num_c-num_d > 0){
                     location.href='resultCD.html';
                   }
@@ -123,14 +204,19 @@
             }
           }
           //-----------------------------------------------
-          if(num_i >= 10){
-            if(num_d <= 6){
-              if(num_s <= 6){
-                if(num_c <= 6){//////////i가 10이상이고 모두가 6이하일 때
+          if(num_i >= 11){
+            if(num_d <= 4){
+              if(num_s <= 4){
+                if(num_c <= 4){//////////i가 10이상이고 모두가 6이하일 때
                   location.href='resultI.html';
                 }
                 else if(num_i-num_c >= 0){
-                  location.href='resultIC.html';
+                  if(num_c >=11){
+                    location.href='resultIC.html';
+                  }
+                  else {
+                    location.href='resultIC--.html';
+                  }
                 }
                 else{
                   location.href='resultCI.html';
@@ -138,10 +224,20 @@
               }
               else {  ////////s가 7이상이고
                 if(num_s-num_c >= 0){
-                  location.href='resultIS.html';
+                  if(num_s >=11){
+                    location.href='resultIS.html';
+                  }
+                  else {
+                    location.href='resultIS--.html';
+                  }
                 }
                 else{
-                  location.href='resultIC.html';
+                  if(num_c >=11){
+                    location.href='resultIC.html';
+                  }
+                  else {
+                    location.href='resultIC--.html';
+                  }
                 }
                 if(num_i-num_s < 0){
                   location.href='resultSI.html';
@@ -150,17 +246,32 @@
             }
             else if((num_i-num_d) > 0){/////d가 7이상이고 i가 같거나 클때
               if((num_d-num_s) >= 0 && (num_d-num_c) >= 0){
-                location.href='resultID.html';
+                if(num_d >=11){
+                  location.href='resultID.html';
+                }
+                else {
+                  location.href='resultID--.html';
+                }
               }
               else {
                 if(num_s-num_c >= 0 ){
-                  location.href='resultIS.html';
+                  if(num_s >=11){
+                    location.href='resultIS.html';
+                  }
+                  else {
+                    location.href='resultIS--.html';
+                  }
                   if(num_s-num_i > 0){
                     location.href='resultSI.html';
                   }
                 }
                 else{
-                  location.href='resultIC.html';
+                  if(num_c >=11){
+                    location.href='resultIC.html';
+                  }
+                  else {
+                    location.href='resultIC--.html';
+                  }
                   if(num_c-num_i > 0){
                     location.href='resultCI.html';
                   }
@@ -172,14 +283,19 @@
             }
           }
           //-----------------------------------------------
-          if(num_s >= 10){
-            if(num_d <= 6){
-              if(num_i <= 6){
-                if(num_c <= 6){//////////i가 10이상이고 모두가 6이하일 때
+          if(num_s >= 11){
+            if(num_d <= 4){
+              if(num_i <= 4){
+                if(num_c <= 4){//////////i가 10이상이고 모두가 6이하일 때
                   location.href='resultS.html';
                 }
                 else if(num_s-num_c >= 0){
-                  location.href='resultSC.html';
+                  if(num_c >=11){
+                    location.href='resultSC.html';
+                  }
+                  else {
+                    location.href='resultSC--.html';
+                  }
                 }
                 else{
                   location.href='resultCS.html';
@@ -187,10 +303,20 @@
               }
               else {  ////////s가 7이상이고
                 if(num_i-num_c >= 0){
-                  location.href='resultSI.html';
+                  if(num_i >=11){
+                    location.href='resultSI.html';
+                  }
+                  else {
+                    location.href='resultSI--.html';
+                  }
                 }
                 else{
-                  location.href='resultSC.html';
+                  if(num_s >=11){
+                    location.href='resultSC.html';
+                  }
+                  else {
+                    location.href='resultSC--.html';
+                  }
                 }
                 if(num_s-num_i <= 0){
                   location.href='resultIS.html';
@@ -199,17 +325,32 @@
             }
             else if((num_s-num_d) > 0){/////d가 7이상이고 i가 같거나 클때
               if((num_d-num_i) >= 0 && (num_d-num_c) >= 0){
-                location.href='resultSD.html';
+                if(num_d >=11){
+                  location.href='resultSD.html';
+                }
+                else {
+                  location.href='resultSD--.html';
+                }
               }
               else {
                 if(num_i-num_c >= 0 ){
-                  location.href='resultSI.html';
+                  if(num_i >=11){
+                    location.href='resultSI.html';
+                  }
+                  else {
+                    location.href='resultSI--.html';
+                  }
                   if(num_i-num_s >= 0){
                     location.href='resultIS.html';
                   }
                 }
                 else{
-                  location.href='resultSC.html';
+                  if(num_c >=11){
+                    location.href='resultSC.html';
+                  }
+                  else {
+                    location.href='resultSC--.html';
+                  }
                   if(num_c-num_s > 0){
                     location.href='resultCS.html';
                   }
@@ -221,14 +362,19 @@
             }
           }////
           //-----------------------------------------------
-          if(num_c >= 10){
-            if(num_d <= 6){
-              if(num_i <= 6){
-                if(num_s <= 6){//////////i가 10이상이고 모두가 6이하일 때
+          if(num_c >= 11){
+            if(num_d <= 4){
+              if(num_i <= 4){
+                if(num_s <= 4){//////////i가 10이상이고 모두가 6이하일 때
                   location.href='resultC.html';
                 }
                 else if(num_c-num_s > 0){
-                  location.href='resultCS.html';
+                  if(num_s >=11){
+                    location.href='resultCS.html';
+                  }
+                  else {
+                    location.href='resultCS--.html';
+                  }
                 }
                 else{
                   location.href='resultSC.html';
@@ -236,10 +382,20 @@
               }
               else {  ////////s가 7이상이고
                 if(num_i-num_s >= 0){
-                  location.href='resultCI.html';
+                  if(num_i >=11){
+                    location.href='resultCI.html';
+                  }
+                  else {
+                    location.href='resultCI--.html';
+                  }
                 }
                 else{
-                  location.href='resultCS.html';
+                  if(num_s >=11){
+                    location.href='resultCS.html';
+                  }
+                  else {
+                    location.href='resultCS--.html';
+                  }
                 }
                 if(num_c-num_i <= 0){
                   location.href='resultIC.html';
@@ -248,17 +404,32 @@
             }
             else if((num_c-num_d) > 0){/////d가 7이상이고 i가 같거나 클때
               if((num_d-num_i) >= 0 && (num_d-num_s) >= 0){
-                location.href='resultCD.html';
+                if(num_d >=11){
+                  location.href='resultCD.html';
+                }
+                else {
+                  location.href='resultCD--.html';
+                }
               }
               else {
                 if(num_i-num_s >= 0 ){
-                  location.href='resultCI.html';
+                  if(num_i >=11){
+                    location.href='resultCI.html';
+                  }
+                  else {
+                    location.href='resultCI--.html';
+                  }
                   if(num_i-num_c >= 0){
                     location.href='resultIC.html';
                   }
                 }
                 else{
-                  location.href='resultCS.html';
+                  if(num_s >=11){
+                    location.href='resultCS.html';
+                  }
+                  else {
+                    location.href='resultCS--.html';
+                  }
                   if(num_s-num_c >= 0){
                     location.href='resultSC.html';
                   }
@@ -269,7 +440,7 @@
               location.href='resultDC.html';
             }
           }
-          if(num_d < 10 && num_i < 10 && num_s < 10 && num_c < 10){
+          if(num_d <= 10 && num_i <= 10 && num_s <= 10 && num_c <= 10){
             if(num_d-num_i >= 0 && num_d-num_s >= 0 && num_d-num_c >= 0){
               if(num_i-num_s >= 0 && num_i-num_c >= 0){
                 location.href='resultDI.html';
