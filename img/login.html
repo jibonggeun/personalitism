@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>성격지상주의</title>
+
+        <!-- Icon css link -->
+        <link href="vendors/themify-icon/themify-icons.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="vendors/linears-icon/style.css" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- RS5.0 Layers and Navigation Styles -->
+        <link rel="stylesheet" type="text/css" href="vendors/revolution/css/layers.css">
+        <link rel="stylesheet" type="text/css" href="vendors/revolution/css/navigation.css">
+        <link rel="stylesheet" type="text/css" href="vendors/revolution/css/settings.css">
+
+        <!-- Extra plugin css -->
+        <link href="vendors/animate-css/animate.css" rel="stylesheet">
+        <link href="vendors/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="vendors/flipster/jquery.flipster.css" rel="stylesheet">
+
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <script>
+      var num_name=0;
+      var num_i=0;
+      var num_s=0;
+      var num_c=0;
+    </script>
+    <body>
+      <!--================Slider Area =================-->
+      <header class="main_menu_area">
+          <nav class="navbar navbar-default">
+              <div class="container">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header" style="background-Color:white;">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar" style="color:black;"></span>
+                          <span class="icon-bar" style="color:black;"></span>
+                          <span class="icon-bar" style="color:black;"></span>
+                      </button>
+                      <a class="navbar-brand" href="index.html"><img src="img/logo/personalitism_logo.png" alt="" style="width:190px; height: 50px;"></a>
+                  </div>
+
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="index.html">성격테스트</a></li>
+                      <li><a href="intro_company.html">Making 기업 소개</a></li>
+                      <li><a href="disc.html">DISC 행동유형이란?</a></li>
+                      <li><a href="https://store.naver.com/restaurants/detail?id=35326840/">DISC 오프라인 상담 예약</a></li>
+                      <li><a href="">성격기반 네트워킹 APP (출시 예정)</a></li>
+                    </ul>
+                  </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+          </nav>
+      </header>
+      <!--================Slider Area =================-->
+
+        <section class="our_benefits_area display_table purple_benefits" id="reservation">
+          <div class="container">
+            <div class="main_title purple_title" style="padding: 0;">
+                <h2 style="margin-top: 100px;">회원가입</h2>
+                <h4 style="font-weight:bold; margin-bottom: 20px;"><br><br>회원가입을 하시면 좀더 자세한 <br><br> DISC정식 테스트를 받을 수 있습니다.<br><br>
+                </h4>
+            </div>
+            <form class="text-center" name=frm1 style="margin-top:10px; margin-bottom: 10px;">
+              <input type="radio" name="group" checked="" style="margin-bottom:10px;">남자 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="radio" name="group">여자<br>
+              <select class="" id="age" name="" style="width:160px; height:30px; margin-bottom: 5px; margin-top:5px">
+                <option value="">나이 선택</option>
+                <option value="18">18세 이하</option>
+                <option value="19">19세</option>
+                <option value="20">20세</option>
+                <option value="21">21세</option>
+                <option value="22">22세</option>
+                <option value="23">23세</option>
+                <option value="24">24세</option>
+                <option value="25">25세</option>
+                <option value="26">26세</option>
+                <option value="27">27세</option>
+                <option value="28">28세</option>
+                <option value="29">29세</option>
+                <option value="30">30세</option>
+                <option value="31">31세</option>
+                <option value="32">32세</option>
+                <option value="33">33세</option>
+                <option value="34">34세</option>
+                <option value="35">35세</option>
+                <option value="33">36세</option>
+                <option value="34">37세</option>
+                <option value="33">38세</option>
+                <option value="34">39세</option>
+                <option value="34">40세 이상</option>
+              </select><br>
+              <input type=text placeholder="이름 입력" name=input1 onblur="check_input1_onblur()" style="width:160px; height:30px; margin-bottom: 5px;"><br>
+              <input type=text placeholder="휴대폰 번호 입력" name=input2 onblur="check_input2_onblur()" style="width:160px; height:30px; margin-bottom: 5px;"><br>
+              <input type=text placeholder="이메일 입력" name=input3 onblur="check_input3_onblur()" style="width:160px; height:30px; margin-bottom: 30px;"><br>
+              <script language "javascript">
+                var age=document.getElementById("age");
+
+                function check_input1_onblur(){
+                  var theForm=document.frm1;
+                  var str = theForm.input1.value.length;
+                  if(str < "2"){
+                    alert("이름의 경우 두글자 이상 써주세요");
+                    theForm.input1.value = ""
+                  }
+                }
+                function check_input2_onblur(){
+                  var theForm=document.frm1;
+                  var str = theForm.input2.value.length;
+                  if(isNaN(theForm.input2.value)){
+                    alert("숫자만 입력해주세요");
+
+                  }
+                  if(str < 10){
+                    alert("10자리 이상 작성해주세요");
+                  }
+                }
+                function check_input3_onblur(){
+                  var theForm=document.frm1;
+                  var text=theForm.input3.value;
+                  var find = "@";
+                  if(text.indexOf(find) == -1){
+                    alert("이메일 형식을 확인해주세요");
+                    theForm.input3.value = ""
+                  }
+                }
+
+                function start_test(){
+                  var theForm=document.frm1;
+                  if(age.options[age.selectedIndex].value==0 || theForm.input1.value=="" || theForm.input2.value=="" || theForm.input3.value==""){
+                    alert("미작성 부분이 있습니다. 확인해주세요");
+                  }
+                  else {
+                    location.href="test.html";
+                  }
+                }
+              </script>
+            </form>
+            <div class="text-center">
+              <h5 style="font-size:12px;margin-top:10px;margin-bottom:30px;">
+                시작하기를 클릭하시면 개인정보 처리방침에<br>자동 동의가 되며 테스트를 시작합니다.<br><br>
+                <a href="service.html">개인정보 처리방침</a>
+              </h5>
+            </div>
+            <div class="sub_btn col-md-12">
+                <a class="btn btn-default submit_btn purple_submit" onclick="start_test()" type="">성격테스트 시작</a>
+            </div>
+            </div>
+          </container>
+        </section>
+
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <script src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
+        <!--RS5.0 Extensions-->
+        <script src="vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+        <script src="vendors/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+        <script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script type="text/javascript" src="vendors/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+        <script src="vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script src="vendors/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script src="vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
+        <!-- Extra plugin js -->
+        <script src="vendors/owlcarousel/owl.carousel.min.js"></script>
+        <script src="vendors/flipster/jquery.flipster.min.js"></script>
+        <!-- contact js -->
+        <script src="js/jquery.form.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/contact.js"></script>
+
+
+    </body>
+</html>
