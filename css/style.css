@@ -45,7 +45,13 @@ Table of Content:
 .col-md-offset-right-1 {
   margin-right: 8.33333333%;
 }
+@font-face {
+  font-family: 'Jalnan'
 
+    url('../fonts/Jalnan.ttf');
+  }
+
+}
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 ul {
@@ -78,6 +84,7 @@ body {
 }
 
 body, p, h1, h2, h3, h4, h5, h6 {
+  font-family:'jalnan';
   margin: 0px;
   padding: 0px;
 }
@@ -363,7 +370,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   display: block;
   line-height: 99px;
   text-transform: uppercase;
-  color: #fff;
+  color: black;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
 }
@@ -379,6 +386,9 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 991px) {
+  .test_section{
+    margin-top: 80px;
+  }
   .main_menu_area .navbar-default .navbar-collapse .nav.navbar-nav li.submenu .dropdown-menu {
     display: block;
     padding: 0px;
@@ -467,7 +477,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   width: 100%;
   left: 0;
   top: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: white;
 }
 
 .main_menu_area.stricky-fixed .navbar-default .navbar-header .navbar-brand {
