@@ -56,6 +56,19 @@
     }
 }
 @media (max-width: 991px){
+
+
+  .main_menu_area .navbar-default .navbar-collapse .nav.navbar-nav li a {
+    padding: 0px;
+    background: transparent;
+    display: block;
+    line-height: 99px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+  }
+
     .navbar-toggle {
         margin-top: 20px;
         margin-bottom: 20px;

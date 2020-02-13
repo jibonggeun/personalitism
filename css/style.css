@@ -386,6 +386,10 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 991px) {
+  .date_image{
+    width:70%;
+    height:300px;
+  }
   .test_section{
     margin-top: 80px;
   }
