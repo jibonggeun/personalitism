@@ -152,15 +152,21 @@
                   }
                 }
 
+                function start(){
+                  location.href="test.html";
+                }
+
                 function start_test(){
                   var theForm=document.frm1;
-                  if(age.options[age.selectedIndex].value==0 || theForm.input1.value=="" || theForm.input2.value=="" || theForm.input3.value==""){
+                  if(age.options[age.selectedIndex].value==0 || theForm.input1.value=="" || theForm.input2.value==""){
                     alert("미작성 부분이 있습니다. 확인해주세요");
                   }
                   else {
-                    location.href="test.html";
+                    start();
                   }
                 }
+
+
               </script>
             </form>
             <div class="text-center">
